@@ -16,48 +16,51 @@ body {
 
 #leftdesign {
     height: 100vh;
-    width: 50px;
+    width: 40px;
     background-color: rgb(17, 17, 17);
 }
 
 header {
-    height: 110px;
-    width: 680px;
-    padding: 20px 30px 20px 40px;
-    background-color: rgba(17, 17, 17, 0.1);
+    height: 150px;
+    width: 760px;
 
+    background-color: rgba(17, 17, 17, 0.1);
     line-height: 1.3;
 
     display: flex;
     justify-content: space-between;
 }
-header #firstdivheader {
-    display: flex;
-    flex-direction: row;
-}
-header #firstdivheader img {
-    margin-left: 35px;
-    max-height: 110px;
-    max-width: 110px;
-}
-header h1 {
-    font-size: 200%;
-}
-header #seconddivheader {
-    max-width: 250px;
+    header #firstdivheader {
+        display: flex;
+        flex-direction: row;
+    }
+        header #firstdivheader div:nth-child(2) {
+            padding: 15px 0 20px 0;
+            font-size: 160%;
+        }
+        header #firstdivheader img {
+            margin-right: 30px;
+            padding: 5px;
+            max-height: 140px;
+            max-width: 140px;
+        }
+    header #seconddivheader {
+        max-width: 250px;
+        padding: 15px 30px 15px 30px;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-header #seconddivheader div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-header i {
-    height: 15px;
-    width: 15px;
-    margin-right: 2px;
-}
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+        header #seconddivheader div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        header i {
+            height: 15px;
+            width: 15px;
+            opacity: 0.3;
+            margin-right: 5px;
+        }

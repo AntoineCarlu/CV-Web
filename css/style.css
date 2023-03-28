@@ -16,6 +16,7 @@ body {
 }
 
 
+/*Deisgn of leftside*/
 #leftdesign {
     width: 200px;
     height: 1200px;
@@ -28,6 +29,7 @@ body {
     }
 
 
+/*HEADER*/
 header {
     width: 600px;
     height: 150px;
@@ -73,6 +75,7 @@ header {
             }
 
 
+/*CONTENT ON LEFT SIDE*/
 #leftcontent p {
     padding: 0 10px 10px 30px;
     color: white;
@@ -107,6 +110,7 @@ header {
     text-decoration: none;
 }
 
+/*IMPORTANT CONTENT ON RIGHT SIDE*/
 #content p {
     padding: 0 20px 10px 20px;
     width: 560px;

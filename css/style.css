@@ -103,6 +103,9 @@ header {
     #leftcontent h2:nth-child(1) {
         margin-top: 0;
     }
+#leftcontent a {
+    text-decoration: none;
+}
 
 #content p {
     padding: 0 20px 10px 20px;

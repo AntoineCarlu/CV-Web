@@ -11,20 +11,34 @@ body {
 
 
 /*Button on the top-right of the screen to change some settings*/
-.settings {
+.settingsButton {
     padding: 2px;
     position: fixed;
     top: 15px;
     right: 0;
+
     font-size: 120%;
     border: 2px solid black;
     border-right: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.settings {
+    width: 150px;
+    height: 250px;
+    position: fixed;
+    right: 0;
+    
+    background-color: white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
 
 /*Deisgn of leftside*/
-#leftdesign {
+#leftDesign {
     position: absolute;
     background-color: rgb(17, 17, 17);
     animation-name: leftanimation;
@@ -33,7 +47,7 @@ body {
 }
     
     /*Image of me*/
-    #leftdesign img {
+    #leftDesign img {
         margin: 10px 9% 5px 9%;
         max-width: 185px;
         max-height: 185px;
@@ -98,14 +112,14 @@ header {
         position: absolute;
         top: 15px;
         left: 15px;
-        font-size: 150%;
-        transition: all 0.1s ease-out;
+        font-size: 170%;
+        transition: all 0.1s ease;
     }
     header .buttonx {
         position: absolute;
         top: 15px;
         left: 60%;
-        font-size: 150%;
+        font-size: 170%;
         transition: all 1s ease-in-out;
     }
 

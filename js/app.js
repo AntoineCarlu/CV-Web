@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////
 //  Script to display leftside bar on mobile  //
 
-const leftside = document.getElementById("leftdesign");
+const leftside = document.getElementById("leftDesign");
 const button = document.querySelector(".button");
 //Event when click on the top-left button to display the leftside bar
 button.addEventListener('click', function() {

@@ -4,79 +4,44 @@
 }
 
 body {
-    margin: auto;
     max-width: 100vw;
     height: 1500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
 }
 
 
 /*Deisgn of leftside*/
 #leftdesign {
-    display: none;
     width: 70%;
     height: 1500px;
-    background-color: rgb(17, 17, 17);
     position: absolute;
+    background-color: rgb(17, 17, 17);
+    transition: all 1s ease-out;
 }
+    /*Image of me*/
     #leftdesign img {
         margin: 10px 9% 5px 9%;
         max-width: 185px;
         max-height: 185px;
+        display: none;
     }
-
-
-/***HEADER***/
-header {
-    width: 100%;
-
-    background-color: rgba(17, 17, 17, 0.2);
-    line-height: 1.3;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    header #firstDivHeader {
-        display: flex;
-        flex-direction: row;
-    }
-        header #firstDivHeader div {
-            margin-left: 20px;
-            padding: 15px 0 20px 0;
-            font-size: 160%;
-            line-height: 1.2;
-        }
-            header #firstDivHeader div p {
-                font-size: 60%;
-            }
-    header #secondDivHeader {
-        padding: 15px 25px 15px 25px;
-        max-width: 250px;
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-        header #secondDivHeader div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-            header i {
-                margin-right: 5px;
-                width: 15px;
-                height: 15px;
-                opacity: 0.3;
-            }
-
 
 /***CONTENT ON LEFT SIDE***/
+.leftcontent {
+    margin-top: 50px;
+}
+.leftcontent h2 {
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+    .leftcontent h2:nth-child(1) {
+        margin-top: 0;
+    }
 .leftcontent p {
     padding: 0 10px 10px 30px;
     color: white;
@@ -87,6 +52,7 @@ header {
     color: white;
     font-size: 110%;
 }
+    /*Lists on leftside*/
     .leftcontent ul {
         padding: 0 10px 20px 30px;
     }
@@ -94,31 +60,76 @@ header {
             color: white;
             line-height: 1.2;
         }
-.leftcontent h2 {
-    margin: 5px;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 95%;
-    color: white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    text-align: center;
-}
-    .leftcontent h2:nth-child(1) {
-        margin-top: 0;
-    }
 .leftcontent a {
     text-decoration: none;
 }
 
-/***IMPORTANT CONTENT ON RIGHT SIDE***/
-.content p {
-    padding: 0 20px 10px 20px;
-    word-wrap: break-word;
+
+/***HEADER***/
+header {
+    width: 100%;
+    background: linear-gradient(0deg, white, rgba(17, 17, 17, 0.1) 5%, rgba(17, 17, 17, 0.2) 25%, rgba(17, 17, 17, 0.4));
+    line-height: 1.3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+    /*Button to display leftside bar on mobile*/
+    header .button {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 150%;
+    }
+    /*Div with names*/
+    header #firstDivHeader {
+        display: flex;
+        flex-direction: row;
+    }
+        header #firstDivHeader div {
+            margin-left: 20px;
+            padding: 25px 0 20px 0;
+            font-size: 160%;
+            line-height: 1.2;
+        }
+            header #firstDivHeader div p {
+                font-size: 70%;
+            }
+    
+    /*Div with important personnal infos*/
+    header #secondDivHeader {
+        padding: 15px 25px 30px 25px;
+        max-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+        header #secondDivHeader div {
+            border-top: 1px solid gray;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+            /*Icons*/
+            header i {
+                margin-right: 5px;
+                width: 15px;
+                height: 15px;
+                opacity: 0.3;
+            }
+
+
+/***IMPORTANT CONTENT ON RIGHT SIDE***/
 .content h2 {
     margin: 10px;
     padding: 5px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+}
+.content p {
+    padding: 0 20px 10px 20px;
+    word-wrap: break-word;
 }

@@ -5,60 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--FONT AWESOME--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <!--FONT AWESOME for icons--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--INTEGRATION CSS--> <link rel="stylesheet" href="css/style.css">
     <title>CV A.C.</title>
 </head>
 <body>
     <!--LEFT SIDE-->
-    <div id="leftdesign">
-        <div>
-            <img src="images/photodeprofil-mini.jpg" alt="Image de profil">
+    <section>
+        <div id="leftdesign">
+            <div>
+                <!--Image of myself-->
+                <img src="images/photodeprofil-mini.jpg" alt="Image de profil">
+            </div>
+            <div class="leftcontent">
+                <!--Hard Skills-->
+                <div>
+                    <h2>Compétences Techniques</h2>
+                    <ul>
+                        <li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li>
+                        <li>Développement <br>Front-End de site web Statique ou Dynamique, et Responsive</li>
+                        <li>Intégration Web en Front-End</li>
+                        <li>Maquettage (Figma)</li>
+                    </ul>
+                </div>
+                <!--Soft Skills-->
+                <div>
+                    <h2>Compétences Transversales</h2>
+                    <ul>
+                        <li>Capacité d'Adaptation et Autonomie</li>
+                        <li>Créativité et Minutie</li>
+                        <li>Esprit Logique et Analytique</li>
+                        <li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li>
+                        <li>Ouverture d'esprit et à l'écoute</li>
+                    </ul>
+                </div>
+                <!--Languages-->
+                <div>
+                    <h2>Langues</h2>
+                    <strong>Français</strong>
+                    <p>Langue natif</p>
+                    <strong>Anglais</strong>
+                    <p style="margin-bottom: 10px">Niveau avancé</p>
+                </div>
+                <!--Hobbies-->
+                <div>
+                    <h2>Passions</h2>
+                </div>
+                <!--Personnal links to importants sites-->
+                <div>
+                    <h2>Liens Personnels</h2>
+                    <a><p>Portfolio</p></a>
+                    <a href="https://www.linkedin.com/in/antoine-carlu-703904269/" target="_blank"><p>linkedin.com/in/antoine-carlu-703904269/</p></a>
+                    <a href="https://github.com/6Yoru6" target="_blank"><p>github.com/6Yoru6</p></a>
+                </div>
+            </div>
         </div>
-        <div class="leftcontent">
-            <div>
-                <h2>Compétences Techniques</h2>
-                <ul>
-                    <li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li>
-                    <li>Développement <br>Front-End de site web Statique ou Dynamique, et Responsive</li>
-                    <li>Intégration Web en Front-End</li>
-                    <li>Maquettage (Figma)</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Compétences Transversales</h2>
-                <ul>
-                    <li>Capacité d'Adaptation et Autonomie</li>
-                    <li>Créativité et Minutie</li>
-                    <li>Esprit Logique et Analytique</li>
-                    <li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li>
-                    <li>Ouverture d'esprit et à l'écoute</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Langues</h2>
-                <strong>Français</strong>
-                <p>Langue natif</p>
-                <strong>Anglais</strong>
-                <p>Niveau avancé</p>
-                <strong>Espagnol</strong>
-                <p style="margin-bottom: 10px">Niveau scolaire</p>
-            </div>
-            <div>
-                <h2>Passions</h2>
-            </div>
-            <div>
-                <h2>Liens Personnels</h2>
-                <a href="https://www.linkedin.com/in/antoine-carlu-703904269/" target="_blank"><p>linkedin.com/in/antoine-carlu-703904269/</p></a>
-                <a href="https://github.com/6Yoru6" target="_blank"><p>github.com/6Yoru6</p></a>
-                <a><p>Portfolio</p></a>
-            </div>
-        </div>
-    </div>
+    </section>
 
+    <!--RIGHT SIDE-->
     <section>
         <!--HEADER-->
         <header>
+            <!--Button to display extra infos on mobile-->
+            <i class="button fa-sharp fa-solid fa-bars fa-bounce" style="color: white; opacity: 1;"></i>
+            <!--First div with importants informations-->
             <div id="firstDivHeader">
                 <div>
                     <h1>Antoine</h1>
@@ -67,14 +77,12 @@
                 </div>
             </div>
 
+            <!--Second div with complement important informations-->
             <div id="secondDivHeader">
-                <div><i class="fa-sharp fa-solid fa-house"></i><p style="line-height: 1;">12 allée des écureuils, 62360
+                <div style="border-top: none"><i class="fa-sharp fa-solid fa-house"></i><p style="line-height: 1;">12 allée des écureuils, 62360
                     <br>Hesdin L'Abbée, France</p></div>
-                <hr style="margin-top: 2px;">
                 <div><i class="fa-solid fa-envelope"></i><p>carluantoine66@outlook.com</p></div>
-                <hr>
                 <div><i class="fa-solid fa-phone"></i><p>06 59 37 83 35</p></div>
-                <hr>
                 <div><i class="fa-solid fa-car"></i><p>Permis B</p></div>
             </div>
         </header>
@@ -82,19 +90,25 @@
 
         <!--IMPORTANT CONTENT-->
         <section class="content">
+            <!--Div profil to describe myself-->
             <div id="profil">
                 <h2>Mon profil</h2>
                 <p>Passionné par la réalisation de projets web, j'ai choisi la voie du développement web et de la programmation depuis l'âge du collège. 
                     Ma curiosité et mon désir d'en apprendre toujours plus, m'a fait découvrir de nombreux langages de programmation en formations professionnelles, ou découvertes personnelles.</p>
             </div>
 
+            <!--Div on my training experience-->
             <div>
                 <h2>Éducation & Formations</h2>
             </div>
+            <!--Div on my profesionnal experience-->
             <div>
                 <h2>Expériences Professionnelles</h2>
             </div>
         </section>
     </section>
+
+    <!--INTEGRATION JS-->
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -10,14 +10,28 @@ body {
 }
 
 
+/*Button on the top-right of the screen to change some settings*/
+.settings {
+    padding: 2px;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    font-size: 120%;
+    border: 2px solid black;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 /*Deisgn of leftside*/
 #leftdesign {
-    width: 70%;
-    height: 1500px;
     position: absolute;
     background-color: rgb(17, 17, 17);
-    transition: all 1s ease-out;
+    animation-name: leftanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+    
     /*Image of me*/
     #leftdesign img {
         margin: 10px 9% 5px 9%;
@@ -38,6 +52,10 @@ body {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     text-align: center;
+
+    animation-name: leftanimation2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
     .leftcontent h2:nth-child(1) {
         margin-top: 0;
@@ -81,7 +99,16 @@ header {
         top: 15px;
         left: 15px;
         font-size: 150%;
+        transition: all 0.1s ease-out;
     }
+    header .buttonx {
+        position: absolute;
+        top: 15px;
+        left: 60%;
+        font-size: 150%;
+        transition: all 1s ease-in-out;
+    }
+
     /*Div with names*/
     header #firstDivHeader {
         display: flex;
@@ -133,3 +160,40 @@ header {
     padding: 0 20px 10px 20px;
     word-wrap: break-word;
 }
+
+
+/***ANIMATIONS***/
+
+/*Apparition of leftside bar*/
+@keyframes leftanimation {
+    0% {
+        width: 0%;
+        height: 0;
+        font-size: 0;
+    }
+    50% {
+        width: 70%;
+        height: 50px;
+        font-size: 0;
+    }
+    100% {
+        width: 70%;
+        height: 1500px;
+        font-size: normal;
+    }
+}
+    /*Complement*/
+    @keyframes leftanimation2 {
+        0% {
+            border-top: none;
+            border-bottom: none;
+        }
+        50% {
+            border-top: none;
+            border-bottom: none;
+        }
+        100% {
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+    }

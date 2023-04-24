@@ -3,15 +3,20 @@
 
 const leftside = document.getElementById("leftdesign");
 const button = document.querySelector(".button");
+//Event when click on the top-left button to display the leftside bar
 button.addEventListener('click', function() {
 
     if (leftside.style.display === "none") {
-        leftside.style.display = "block"
+        leftside.style.display = "block";
+        button.setAttribute('class', 'button fa-solid fa-xmark');
+        button.classList.remove('button');
+        button.classList.add('buttonx');
     } else {
-            leftside.style.display = "none"
+            leftside.style.display = "none";
+            button.setAttribute('class', 'buttonx fa-sharp fa-solid fa-bars');
+            button.classList.remove('buttonx');
+            button.classList.add('button');
         }
-    button.setAttribute('class', 'button fa-sharp fa-solid fa-bars');
-
 });
 
 

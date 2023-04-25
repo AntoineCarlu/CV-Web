@@ -6,17 +6,17 @@ const button = document.querySelector(".button");
 //Event when click on the top-left button to display the leftside bar
 button.addEventListener('click', function() {
 
-    if (leftside.style.display === "none") {
-        leftside.style.display = "block";
-        button.setAttribute('class', 'button fa-solid fa-xmark');
-        button.classList.remove('button');
-        button.classList.add('buttonx');
-    } else {
-            leftside.style.display = "none";
-            button.setAttribute('class', 'buttonx fa-sharp fa-solid fa-bars');
-            button.classList.remove('buttonx');
-            button.classList.add('button');
-        }
+  if (leftside.style.display === "none") {
+    leftside.style.display = "block";
+    button.setAttribute('class', 'button fa-solid fa-xmark');
+    button.classList.remove('button');
+    button.classList.add('buttonx');
+  } else {
+        leftside.style.display = "none";
+        button.setAttribute('class', 'buttonx fa-sharp fa-solid fa-bars');
+        button.classList.remove('buttonx');
+        button.classList.add('button');
+    }
 });
 
 
@@ -35,3 +35,71 @@ mq.addListener(MediaQuerry); // listen for changes in viewport width
 
 //                                            //
 ////////////////////////////////////////////////
+
+
+//////////////////////////////////////
+//  Buttons to open panel settings  //
+
+const buttonSettings = document.querySelector(".settingsButton");
+const panel = document.querySelector(".settings");
+
+buttonSettings.addEventListener('click', function() {
+  if (panel.style.display === "none") {
+    panel.style.display = "block";
+    buttonSettings.style.right = "120px";
+  } else {
+    panel.style.display = "none";
+    buttonSettings.style.right = "0";
+  }
+});
+
+//////////////////////////////////////////////////
+//  Buttons to change colors in settings panel  //
+
+const leftcolor = document.querySelector("#leftDesign");
+const gradientcolor = document.querySelector("#headerTop");
+
+const graybutton = document.getElementById("gray");
+graybutton.addEventListener('click', function() {
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgba(17, 17, 17, 0.1) 5%, rgba(17, 17, 17, 0.2) 25%, rgba(17, 17, 17, 0.4))`;
+  leftcolor.style.background = `rgba(17, 17, 17, 0.97)`;
+});
+
+const redbutton = document.getElementById("red");
+redbutton.addEventListener('click', function() {
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgba(255, 0, 0, 0.1) 5%, rgba(255, 0, 0, 0.2) 25%, rgba(255, 0, 0, 0.4))`;
+  leftcolor.style.background = `rgba(100, 0, 0, 0.97)`;
+});
+
+const bluebutton = document.getElementById("blue");
+bluebutton.addEventListener('click', function() {
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgba(0, 0, 255, 0.1) 5%, rgba(0, 0, 255, 0.2) 25%, rgba(0, 0, 255, 0.4))`;
+  leftcolor.style.background = `rgba(0, 0, 100, 0.97)`;
+});
+
+const yellowbutton = document.getElementById("yellow");
+yellowbutton.addEventListener('click', function() {
+
+});
+
+const greenbutton = document.getElementById("green");
+greenbutton.addEventListener('click', function() {
+
+});
+
+const purplebutton = document.getElementById("purple");
+purplebutton.addEventListener('click', function() {
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgba(155, 0, 155, 0.1) 5%, rgba(155, 0, 155, 0.2) 25%, rgba(155, 0, 155, 0.4))`;
+  leftcolor.style.background = `rgba(80, 0, 80, 0.97)`;
+});
+
+//                                              //
+//////////////////////////////////////////////////
+
+
+////////////////////////////////////////
+//  Copy function on important infos  //
+
+const adress = document.querySelector("#adress");
+const email = document.querySelector("#email");
+

@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antoine CARLU | CV en ligne de Développeur Web / Web Developer CV">
     
     <!--FONT AWESOME for icons--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--INTEGRATION CSS--> <link rel="stylesheet" href="css/style.css">
     <title>CV A.C.</title>
 </head>
 <body>
-    <i class="settingsButton fa-solid fa-gear" style="color: #000000;"></i>
-    <div class="settings">
+    <!---SETTINGS PANEL--->
+    <i class="settingsButton fa-solid fa-gear" style="color: #ffffff;"></i>
+    <div class="settings" style="display: none;">
         <button>FR</button>
         <button>EN</button>
+        <div>
+            <button id="gray"></button>
+            <button id="red"></button>
+            <button id="blue"></button>
+            <button id="yellow"></button>
+            <button id="green"></button>
+            <button id="purple"></button>
+        </div>
     </div>
+
+    
     <!---LEFT SIDE--->
     <section>
         <div id="leftDesign">
@@ -22,6 +34,7 @@
                 <!--Image of myself-->
                 <img src="images/photodeprofil-mini.jpg" alt="Image de profil">
             </div>
+
             <div class="leftcontent">
                 <!--Hard Skills-->
                 <div>
@@ -67,10 +80,11 @@
         </div>
     </section>
 
+
     <!---RIGHT SIDE--->
     <section>
         <!---HEADER--->
-        <header>
+        <header id="headerTop">
             <!--Button to display extra infos on mobile-->
             <i class="button fa-sharp fa-solid fa-bars fa-bounce" style="color: white; opacity: 1;"></i>
             <!--First div with importants informations-->
@@ -84,9 +98,9 @@
 
             <!--Second div with complement important informations-->
             <div id="secondDivHeader">
-                <div style="border-top: none"><i class="fa-sharp fa-solid fa-house"></i><p style="line-height: 1;">12 allée des écureuils, 62360
+                <div id="adress" style="border-top: none"><i class="fa-sharp fa-solid fa-house"></i><p style="line-height: 1;">12 allée des écureuils, 62360
                     <br>Hesdin L'Abbée, France</p></div>
-                <div><i class="fa-solid fa-envelope"></i><p>carluantoine66@outlook.com</p></div>
+                <div id="email"><i class="fa-solid fa-envelope"></i><p>carluantoine66@outlook.com</p></div>
                 <div><i class="fa-solid fa-phone"></i><p>06 59 37 83 35</p></div>
                 <div><i class="fa-solid fa-car"></i><p>Permis B</p></div>
             </div>
@@ -112,6 +126,7 @@
             </div>
         </section>
     </section>
+
 
     <!--INTEGRATION JS-->
     <script src="js/app.js"></script>

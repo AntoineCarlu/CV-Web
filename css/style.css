@@ -25,14 +25,10 @@ body {
     border-bottom-left-radius: 10px;
     cursor: pointer;
 }
-    .settingsButton.animation {
-        animation-name: settingsButtonAnimation;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    .settingsButton.animation.reverse {
-        animation-direction: reverse;
-    }
+.settingsButton.animation {
+    animation: settingsButtonAnimation 0.8s forwards;
+}
+
 /*Settings panel*/
 .settings {
     padding-top: 10px;
@@ -47,10 +43,9 @@ body {
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
-
-    animation-name: panelAnimation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+}
+.settings.animation {
+    animation: panelAnimation 0.8s forwards;
 }
     /*FR/EN buttons*/
     .settings button {

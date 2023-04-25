@@ -46,12 +46,18 @@ const panel = document.querySelector(".settings");
 buttonSettings.addEventListener('click', function() {
   if (panel.style.display === "none") {
     panel.style.display = "block";
-    buttonSettings.classList.toggle('animation');
+    panel.classList.add('animation');
+    buttonSettings.classList.add('animation');
   } else {
+    buttonSettings.classList.remove('animation');
+    panel.classList.remove('animation');
     panel.style.display = "none";
-    buttonSettings.classList.toggle('animation');
   }
 });
+
+//                                  //
+//////////////////////////////////////
+
 
 //////////////////////////////////////////////////
 //  Buttons to change colors in settings panel  //
@@ -123,3 +129,6 @@ phone.addEventListener('click', function() {
   navigator.clipboard.writeText(phoneText);
   alert("Numéro de téléphone copié !");
 });
+
+//                                    //
+////////////////////////////////////////

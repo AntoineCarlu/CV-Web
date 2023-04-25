@@ -46,10 +46,10 @@ const panel = document.querySelector(".settings");
 buttonSettings.addEventListener('click', function() {
   if (panel.style.display === "none") {
     panel.style.display = "block";
-    buttonSettings.style.right = "120px";
+    buttonSettings.classList.toggle('animation');
   } else {
     panel.style.display = "none";
-    buttonSettings.style.right = "0";
+    buttonSettings.classList.toggle('animation');
   }
 });
 

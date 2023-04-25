@@ -25,11 +25,19 @@ body {
     border-bottom-left-radius: 10px;
     cursor: pointer;
 }
+    .settingsButton.animation {
+        animation-name: settingsButtonAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .settingsButton.animation.reverse {
+        animation-direction: reverse;
+    }
 /*Settings panel*/
 .settings {
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 120px;
+    width: 0;
     height: 250px;
     position: fixed;
     right: 0;
@@ -37,9 +45,12 @@ body {
     background-color: white;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
-
     display: flex;
     flex-direction: column;
+
+    animation-name: panelAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
     /*FR/EN buttons*/
     .settings button {
@@ -267,5 +278,22 @@ header #headerTop {
         100% {
             border-top: 2px solid white;
             border-bottom: 2px solid white;
+        }
+    }
+
+@keyframes panelAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 120px;
+    }
+}
+    @keyframes settingsButtonAnimation {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: 120px;
         }
     }

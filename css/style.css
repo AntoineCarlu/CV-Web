@@ -23,6 +23,7 @@ body {
     border-right: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    cursor: pointer;
 }
 /*Settings panel*/
 .settings {
@@ -45,6 +46,7 @@ body {
         margin: 2px 2px 0 2px;
         padding: 1px;
         width: 116px;
+        cursor: pointer;
     }
     .settings div {
         margin: 10px 0 10px 0;
@@ -59,6 +61,7 @@ body {
             height: 30px;
             border: 1px solid black;
             border-radius: 50%;
+            cursor: pointer;
         }
             .settings #gray {
                 background-color: rgba(17, 17, 17, 0.8);
@@ -159,6 +162,7 @@ header #headerTop {
         top: 15px;
         left: 15px;
         font-size: 170%;
+        cursor: pointer;
         transition: all 0.1s ease;
     }
     header .buttonx {
@@ -166,6 +170,7 @@ header #headerTop {
         top: 15px;
         left: 60%;
         font-size: 170%;
+        cursor: pointer;
         transition: all 1s ease-in-out;
     }
 
@@ -195,10 +200,14 @@ header #headerTop {
         justify-content: center;
     }
         header #secondDivHeader div {
+            padding: 5px 0 5px 0;
             border-top: 1px solid gray;
             display: flex;
             flex-direction: row;
             align-items: center;
+        }
+        header #secondDivHeader #adress,#email,#phone:hover {
+            cursor: pointer;
         }
             /*Icons*/
             header i {
@@ -206,6 +215,10 @@ header #headerTop {
                 width: 15px;
                 height: 15px;
             }
+        header #secondDivHeader a {
+            text-decoration: none;
+            color: black;
+        }
 
 
 /***IMPORTANT CONTENT ON RIGHT SIDE***/

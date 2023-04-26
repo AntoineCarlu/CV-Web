@@ -99,7 +99,7 @@ const gradientcolor = document.querySelector("#headerTop");
 const graybutton = document.getElementById("gray");
 graybutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(17, 17, 17, 0.1) 5%, rgba(17, 17, 17, 0.2) 25%, rgba(17, 17, 17, 0.4))`;
-  leftcolor.style.background = `rgba(20, 20, 20, 0.97)`;
+  leftcolor.style.background = `rgba(40, 40, 40, 0.97)`;
 });
 
 const redbutton = document.getElementById("red");
@@ -111,18 +111,20 @@ redbutton.addEventListener('click', function() {
 const bluebutton = document.getElementById("blue");
 bluebutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(0, 0, 255, 0.1) 5%, rgba(0, 0, 255, 0.2) 25%, rgba(0, 0, 255, 0.4))`;
-  leftcolor.style.background = `rgba(0, 0, 130, 0.97)`;
+  leftcolor.style.background = `rgba(0, 0, 120, 0.97)`;
 });
 
 const beigebutton = document.getElementById("beige");
 beigebutton.addEventListener('click', function() {
-  gradientcolor.style.background = `linear-gradient(0deg, white, rgb(213, 186, 152, 0.2) 5%, rgb(213, 186, 152, 0.4) 25%, rgb(213, 186, 152, 0.6))`;
-  leftcolor.style.background = `rgb(203, 176, 142, 0.97)`;
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgb(198, 181, 168, 0.2) 5%, rgb(198, 181, 168, 0.4) 25%, rgb(198, 181, 168, 0.6))`;
+  //leftcolor.style.background = `rgb(203, 176, 142, 0.97)`;
+  leftcolor.style.background = `rgb(169, 149, 133, 0.97)`;
 });
 
-const greenbutton = document.getElementById("green");
-greenbutton.addEventListener('click', function() {
-
+const orangebutton = document.getElementById("orange"); 
+orangebutton.addEventListener('click', function() {
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgb(235, 130, 0, 0.1) 5%, rgb(235, 130, 0, 0.2) 25%, rgb(235, 130, 0, 0.4))`;
+  leftcolor.style.background = `rgb(210, 80, 0, 0.97)`;
 });
 
 const purplebutton = document.getElementById("purple");

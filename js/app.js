@@ -99,24 +99,25 @@ const gradientcolor = document.querySelector("#headerTop");
 const graybutton = document.getElementById("gray");
 graybutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(17, 17, 17, 0.1) 5%, rgba(17, 17, 17, 0.2) 25%, rgba(17, 17, 17, 0.4))`;
-  leftcolor.style.background = `rgba(17, 17, 17, 0.97)`;
+  leftcolor.style.background = `rgba(20, 20, 20, 0.97)`;
 });
 
 const redbutton = document.getElementById("red");
 redbutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(255, 0, 0, 0.1) 5%, rgba(255, 0, 0, 0.2) 25%, rgba(255, 0, 0, 0.4))`;
-  leftcolor.style.background = `rgba(100, 0, 0, 0.97)`;
+  leftcolor.style.background = `rgba(139, 0, 0, 0.97)`;
 });
 
 const bluebutton = document.getElementById("blue");
 bluebutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(0, 0, 255, 0.1) 5%, rgba(0, 0, 255, 0.2) 25%, rgba(0, 0, 255, 0.4))`;
-  leftcolor.style.background = `rgba(0, 0, 100, 0.97)`;
+  leftcolor.style.background = `rgba(0, 0, 130, 0.97)`;
 });
 
-const yellowbutton = document.getElementById("yellow");
-yellowbutton.addEventListener('click', function() {
-
+const beigebutton = document.getElementById("beige");
+beigebutton.addEventListener('click', function() {
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgb(213, 186, 152, 0.2) 5%, rgb(213, 186, 152, 0.4) 25%, rgb(213, 186, 152, 0.6))`;
+  leftcolor.style.background = `rgb(203, 176, 142, 0.97)`;
 });
 
 const greenbutton = document.getElementById("green");
@@ -126,8 +127,8 @@ greenbutton.addEventListener('click', function() {
 
 const purplebutton = document.getElementById("purple");
 purplebutton.addEventListener('click', function() {
-  gradientcolor.style.background = `linear-gradient(0deg, white, rgba(155, 0, 155, 0.1) 5%, rgba(155, 0, 155, 0.2) 25%, rgba(155, 0, 155, 0.4))`;
-  leftcolor.style.background = `rgba(80, 0, 80, 0.97)`;
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgba(138, 43, 226, 0.1) 5%, rgba(138, 43, 226, 0.2) 25%, rgba(138, 43, 226, 0.4))`;
+  leftcolor.style.background = `rgba(108, 23, 166, 0.97)`;
 });
 
 //                                              //

@@ -43,8 +43,7 @@ body {
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
-}
-.settings.animation {
+} .settings.animation {
     animation: panelAnimation 0.8s forwards;
 }
     /*FR/EN buttons*/
@@ -54,6 +53,7 @@ body {
         width: 116px;
         cursor: pointer;
     }
+    /*Positions of elements*/
     .settings div {
         margin: 10px 0 10px 0;
         display: grid;
@@ -61,6 +61,7 @@ body {
         justify-items: center;
         align-items: center;
     }
+        /*Color settings*/
         .settings div button {
             margin: 5px;
             width: 30px;
@@ -88,14 +89,16 @@ body {
                 background-color: rgba(155, 0, 155, 0.8);
             }
 
+
 /*Deisgn of leftside*/
 #leftDesign {
     position: absolute;
     background-color: rgba(17, 17, 17, 0.97);
-    animation-name: leftanimation;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
     transition: background 1s ease;
+} @media all and (max-width: 600px) {
+    #leftDesign {
+        animation: leftanimation 2s forwards;
+    }
 }
     
     /*Image of myself*/
@@ -119,9 +122,11 @@ body {
     border-bottom: 2px solid white;
     text-align: center;
 
-    animation-name: leftanimation2;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    
+} @media all and (max-width: 600px) {
+    .leftcontent h2 {
+        animation: leftanimation2 2s forwards;
+    }
 }
     .leftcontent h2:nth-child(1) {
         margin-top: 0;
@@ -215,17 +220,17 @@ header #headerTop {
         header #secondDivHeader #adress,#email,#phone:hover {
             cursor: pointer;
         }
+        header #secondDivHeader a {
+            text-decoration: none;
+            color: black;
+        }
             /*Icons*/
             header i {
                 margin-right: 5px;
                 width: 15px;
                 height: 15px;
             }
-        header #secondDivHeader a {
-            text-decoration: none;
-            color: black;
-        }
-
+        
 
 /***IMPORTANT CONTENT ON RIGHT SIDE***/
 .content h2 {
@@ -276,6 +281,7 @@ header #headerTop {
         }
     }
 
+/*Slide of Panel Settings*/
 @keyframes panelAnimation {
     0% {
         width: 0;
@@ -284,6 +290,7 @@ header #headerTop {
         width: 120px;
     }
 }
+    /*The button too*/
     @keyframes settingsButtonAnimation {
         0% {
             right: 0;
@@ -292,3 +299,28 @@ header #headerTop {
             right: 120px;
         }
     }
+
+
+            /****************/
+            /***RESPONSIVE***/
+            /****************/
+
+@media all and (min-width: 600px) and (min-height: 500px) {
+    body {
+        display: flex;
+    }
+
+    #sectionLeft {
+        width: 20%;
+    }
+        #leftDesign {
+            display: block;
+            position: static;
+        }
+            .leftcontent {
+                margin: 0;
+            }
+    #sectionRight {
+        width: 80%;
+    }
+}

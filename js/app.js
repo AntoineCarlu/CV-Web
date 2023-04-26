@@ -1,3 +1,34 @@
+////////////////////////////////////////
+//  Copy function on important infos  //
+
+const adress = document.querySelector("#adress")
+const email = document.querySelector("#email");
+const phone = document.querySelector("#phone");
+
+adress.addEventListener('click', function() {
+  const adressText = "62360 Hesdin L'Abbé, France";
+  navigator.clipboard.writeText(adressText);
+  alert("Adresse copiée !");
+});
+
+email.addEventListener('click', function() {
+  const emailP = email.querySelector("p");
+  const emailText = emailP.innerText;
+  navigator.clipboard.writeText(emailText);
+  alert("Adresse e-Mail copiée !");
+});
+
+phone.addEventListener('click', function() {
+  const phoneP = phone.querySelector("p");
+  const phoneText = phoneP.innerText;
+  navigator.clipboard.writeText(phoneText);
+  alert("Numéro de téléphone copié !");
+});
+
+//                                    //
+////////////////////////////////////////
+
+
 ////////////////////////////////////////////////
 //  Script to display leftside bar on mobile  //
 
@@ -29,7 +60,7 @@ function MediaQuerry(mq) {
     leftside.style.display = 'block';
   }
 }
-const mq = window.matchMedia('(max-width: 500px)');
+const mq = window.matchMedia('(max-width: 600px)');
 MediaQuerry(mq); // check initial viewport width
 mq.addListener(MediaQuerry); // listen for changes in viewport width
 
@@ -101,34 +132,3 @@ purplebutton.addEventListener('click', function() {
 
 //                                              //
 //////////////////////////////////////////////////
-
-
-////////////////////////////////////////
-//  Copy function on important infos  //
-
-const adress = document.querySelector("#adress")
-const email = document.querySelector("#email");
-const phone = document.querySelector("#phone");
-
-adress.addEventListener('click', function() {
-  const adressText = "62360 Hesdin L'Abbé, France";
-  navigator.clipboard.writeText(adressText);
-  alert("Adresse copiée !");
-});
-
-email.addEventListener('click', function() {
-  const emailP = email.querySelector("p");
-  const emailText = emailP.innerText;
-  navigator.clipboard.writeText(emailText);
-  alert("Adresse e-Mail copiée !");
-});
-
-phone.addEventListener('click', function() {
-  const phoneP = phone.querySelector("p");
-  const phoneText = phoneP.innerText;
-  navigator.clipboard.writeText(phoneText);
-  alert("Numéro de téléphone copié !");
-});
-
-//                                    //
-////////////////////////////////////////

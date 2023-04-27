@@ -46,14 +46,25 @@ body {
     animation: panelAnimation 0.8s forwards;
 }
     /*FR/EN buttons*/
-    .settings button {
-        margin: 5px 2px 5px 2px;
+    .settings .languageButton button {
+        margin: 5px 20% 5px 20%;
         padding: 1px;
-        width: 98%;
+        width: 60%;
+        height: 20px;
         cursor: pointer;
     }
+        .settings .languageButton button:nth-child(1) {
+            background-image: url(/imgs/fr-flag.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .settings .languageButton button:nth-child(2) {
+            background-image: url(/imgs/en-flag.png);
+            background-position: center;
+            background-size: cover;
+        }
     /*Positions of color buttons*/
-    .settings div {
+    .settings .colorButton {
         margin: 15px 0 15px 0;
         display: grid;
         grid-template-columns: auto auto auto;
@@ -61,7 +72,7 @@ body {
         align-items: center;
     }
         /*Color settings*/
-        .settings div button {
+        .settings .colorButton button {
             margin: 5px;
             width: 30px;
             height: 30px;
@@ -108,7 +119,6 @@ body {
 /***CONTENT ON LEFT SIDE***/
 .leftcontent {
     margin-top: 50px;
-    text-align: center;
 }
     .leftcontent h2 {
         margin: 5px;
@@ -118,8 +128,6 @@ body {
         border-top: 2px solid white;
         border-bottom: 2px solid white;
         text-align: center;
-
-        
     } @media all and (max-width: 600px) {
         .leftcontent h2 {
             animation: leftanimation2 2s forwards;
@@ -143,12 +151,27 @@ body {
         padding: 0 10px 20px 30px;
     }
         .leftcontent ul li {
+            padding-bottom: 7px;
             color: white;
             line-height: 1.2;
         }
     .leftcontent a {
         text-decoration: none;
     }
+    .leftcontent #links {
+        margin-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+        .leftcontent #links i {
+            font-size: 150%;
+        }
+        .leftcontent #links p {
+            padding: 0;
+        }
 
 
 /***HEADER***/
@@ -243,6 +266,7 @@ header #headerTop {
     padding: 0 20px 10px 20px;
     word-wrap: break-word;
 }
+/*Box-shadow effect*/
 .content #profil, #formation, #experience {
     margin: 10px;
     padding-top: 1px;
@@ -335,6 +359,7 @@ header #headerTop {
             }
             .leftcontent {
                 margin: 0;
+                text-align: start;
             }
 
     /*RIGHT SIDE*/

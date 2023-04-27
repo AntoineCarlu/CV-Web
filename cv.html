@@ -14,9 +14,11 @@
     <!---SETTINGS PANEL--->
     <i class="settingsButton fa-solid fa-gear"></i>
     <div class="settings" style="display: none;">
-        <button>FR</button>
-        <button>EN</button>
-        <div>
+        <div class="languageButton">
+            <button id="fr"></button>
+            <button id="en"></button>
+        </div>
+        <div class="colorButton">
             <button id="gray"></button>
             <button id="red"></button>
             <button id="blue"></button>
@@ -37,44 +39,48 @@
 
             <div class="leftcontent">
                 <!--Hard Skills-->
-                <div>
+                <div id="hardskills">
                     <h2>Compétences Techniques</h2>
                     <ul>
                         <li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li>
-                        <li>Développement <br>Front-End de site web Statique ou Dynamique, et Adaptable</li>
+                        <li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li>
                         <li>Intégration Web en Front-End</li>
                         <li>Maquettage (Figma)</li>
                     </ul>
                 </div>
                 <!--Soft Skills-->
-                <div>
+                <div id="softskills">
                     <h2>Compétences Transversales</h2>
                     <ul>
                         <li>Capacité d'Adaptation et Autonomie</li>
                         <li>Créativité et Minutie</li>
                         <li>Esprit Logique et Analytique</li>
                         <li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li>
-                        <li>Ouverture d'esprit et à l'écoute</li>
+                        <li>Ouvert d'esprit et à l'écoute</li>
                     </ul>
                 </div>
                 <!--Languages-->
-                <div>
+                <div id="languages">
                     <h2>Langues</h2>
-                    <strong>Français</strong>
-                    <p>Langue natif</p>
-                    <strong>Anglais</strong>
-                    <p style="margin-bottom: 10px">Niveau avancé</p>
+                    <strong id="lfr">Français</strong>
+                    <p id="frp">Langue natif</p>
+                    <strong id="len">Anglais</strong>
+                    <p id="enp" style="margin-bottom: 10px">Niveau avancé</p>
                 </div>
                 <!--Hobbies-->
-                <div>
+                <div id="passions">
                     <h2>Passions</h2>
                 </div>
                 <!--Personnal links to importants sites-->
-                <div>
+                <div id="personnalLinks">
                     <h2>Liens Personnels</h2>
-                    <a><p>Portfolio</p></a>
-                    <a href="https://www.linkedin.com/in/antoine-carlu-703904269/" target="_blank"><p>linkedin.com/in/antoine-carlu-703904269/</p></a>
-                    <a href="https://github.com/6Yoru6" target="_blank"><p>github.com/6Yoru6</p></a>
+                    <div id="links">
+                        <a><p>Port<br>folio</p></a>
+                        <a href="https://www.linkedin.com/in/antoine-carlu-703904269/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                        <!-- <a href="https://www.linkedin.com/in/antoine-carlu-703904269/" target="_blank"><p>linkedin.com/in/antoine-carlu-703904269/</p></a> -->
+                        <a href="https://github.com/6Yoru6" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                        <!-- <a href="https://github.com/6Yoru6" target="_blank"><p>github.com/6Yoru6</p></a> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,7 +98,7 @@
                 <div>
                     <h1>Antoine</h1>
                     <h1>CARLU</h1>
-                    <p>Développeur Web</p>
+                    <p id="headerP">Développeur Web</p>
                 </div>
             </div>
 
@@ -102,7 +108,7 @@
                     <br>Hesdin L'Abbé, France</p></div>
                 <div id="email"><i class="fa-solid fa-envelope"></i><p>carluantoine66@outlook.com</p></div>
                 <div id="phone"><i class="fa-solid fa-phone"></i><p>06 59 37 83 35</p></div>
-                <div><i class="fa-solid fa-car"></i><p>Permis B</p></div>
+                <div><i class="fa-solid fa-car"></i><p id="headerI">Permis B</p></div>
             </div>
         </header>
 
@@ -111,7 +117,7 @@
         <section class="content">
             <!--Div profil to describe myself-->
             <div id="profil">
-                <h2>Mon profil</h2>
+                <h2>Mon Profil</h2>
                 <p>Passionné par la réalisation de projets web, j'ai choisi la voie du développement web et de la programmation depuis l'âge du collège. 
                     Ma curiosité et mon désir d'en apprendre toujours plus, m'a fait découvrir de nombreux langages de programmation en formations professionnelles, ou découvertes personnelles.</p>
             </div>

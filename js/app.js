@@ -155,3 +155,59 @@ purplebutton.addEventListener('click', function() {
 
 //                                              //
 //////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////
+//  Buttons to change language of the CV  //
+
+
+
+const fr = document.getElementById("fr");
+fr.addEventListener('click', function() {
+  document.getElementById("headerP").innerHTML = `Développeur Web`;
+  document.getElementById("headerI").innerHTML = `Permis B`;
+  document.querySelector("#profil h2").innerHTML = `Mon Profil`;
+  document.querySelector("#profil p").innerHTML = `Passionné par la réalisation de projets web, j'ai choisi la voie du développement web et de la programmation depuis l'âge du collège. Ma curiosité et mon désir d'en apprendre toujours plus, m'a fait découvrir de nombreux langages de programmation en formations professionnelles, ou découvertes personnelles.`;
+  document.querySelector("#formation h2").innerHTML = `Éducation & Formations`;
+  document.querySelector("#formation p").innerHTML = `XXX`;
+  document.querySelector("#experience h2").innerHTML = `Expériences Professionnelles`;
+  document.querySelector("#experience p").innerHTML = `XXX`;
+  document.querySelector("#hardskills h2").innerHTML = `Compétences Techniques`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
+  document.querySelector("#softskills h2").innerHTML = `Compétences Transversales`;
+  document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'Adaptation et Autonomie</li><li>Créativité et Minutie</li><li>Esprit Logique et Analytique</li><li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
+  document.querySelector("#languages h2").innerHTML = `Langues`;
+  document.querySelector("#lfr").innerHTML = `Français`;
+  document.querySelector("#frp").innerHTML = `Langue natif`;
+  document.querySelector("#len").innerHTML = `Anglais`;
+  document.querySelector("#enp").innerHTML = `Niveau avancé`;
+  document.querySelector("#passions h2").innerHTML = `Passions`;
+  document.querySelector("#personnalLinks h2").innerHTML = `Liens Personnels`;
+});
+
+const en = document.getElementById("en");
+en.addEventListener('click', function() {
+  document.getElementById("headerP").innerHTML = `Web Developer`;
+  document.getElementById("headerI").innerHTML = `B Permit`;
+  document.querySelector("#profil h2").innerHTML = `My Profil`;
+  document.querySelector("#profil p").innerHTML = `blablablablablabla`;
+  document.querySelector("#formation h2").innerHTML = `Education & Trainings`;
+  document.querySelector("#formation p").innerHTML = `XXX`;
+  document.querySelector("#experience h2").innerHTML = `Professional Experiences`;
+  document.querySelector("#experience p").innerHTML = `XXX`;
+  document.querySelector("#hardskills h2").innerHTML = `Hard Skills`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Web development Languages<br>(HTML5/CSS3/JS)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
+  document.querySelector("#softskills h2").innerHTML = `Soft Skills`;
+  document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and Autonomy</li><li>Creativity and Thoroughness</li><li>Logical and Analytical Thinking</li><li>Web researches and <br>Knowledge updating</li><li>Open-minded and Listening to others</li>`;
+  document.querySelector("#languages h2").innerHTML = `Languages`;
+  document.querySelector("#lfr").innerHTML = `French`;
+  document.querySelector("#frp").innerHTML = `Native language`;
+  document.querySelector("#len").innerHTML = `English`;
+  document.querySelector("#enp").innerHTML = `Advanced level`;
+  document.querySelector("#passions h2").innerHTML = `Passions`;
+  document.querySelector("#personnalLinks h2").innerHTML = `Personnals Links`;
+});
+
+//                                        //
+////////////////////////////////////////////

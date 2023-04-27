@@ -243,6 +243,12 @@ header #headerTop {
     padding: 0 20px 10px 20px;
     word-wrap: break-word;
 }
+.content #profil, #formation, #experience {
+    margin: 10px;
+    padding-top: 1px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease;
+}
 
             /****************/
             /***ANIMATIONS***/

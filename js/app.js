@@ -95,42 +95,62 @@ buttonSettings.addEventListener('click', function() {
 
 const leftcolor = document.querySelector("#leftDesign");
 const gradientcolor = document.querySelector("#headerTop");
+const profil = document.querySelector("#profil");
+const formation = document.querySelector("#formation");
+const experience = document.querySelector("#experience");
 
 const graybutton = document.getElementById("gray");
 graybutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(17, 17, 17, 0.1) 5%, rgba(17, 17, 17, 0.2) 25%, rgba(17, 17, 17, 0.4))`;
   leftcolor.style.background = `rgba(40, 40, 40, 0.97)`;
+  profil.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
+  formation.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
+  experience.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
 });
 
 const redbutton = document.getElementById("red");
 redbutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(255, 0, 0, 0.1) 5%, rgba(255, 0, 0, 0.2) 25%, rgba(255, 0, 0, 0.4))`;
   leftcolor.style.background = `rgba(139, 0, 0, 0.97)`;
+  profil.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
+  formation.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
+  experience.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
 });
 
 const bluebutton = document.getElementById("blue");
 bluebutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(0, 0, 255, 0.1) 5%, rgba(0, 0, 255, 0.2) 25%, rgba(0, 0, 255, 0.4))`;
   leftcolor.style.background = `rgba(0, 0, 120, 0.97)`;
+  profil.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
+  formation.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
+  experience.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
 });
 
 const beigebutton = document.getElementById("beige");
 beigebutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgb(198, 181, 168, 0.2) 5%, rgb(198, 181, 168, 0.4) 25%, rgb(198, 181, 168, 0.6))`;
-  //leftcolor.style.background = `rgb(203, 176, 142, 0.97)`;
   leftcolor.style.background = `rgb(169, 149, 133, 0.97)`;
+  profil.style.boxShadow = `0 2px 8px 0 rgba(198, 181, 168, 0.5), 0 4px 10px 0 rgba(198, 181, 168, 0.5)`;
+  formation.style.boxShadow = `0 2px 8px 0 rgba(198, 181, 168, 0.5), 0 4px 10px 0 rgba(198, 181, 168, 0.5)`;
+  experience.style.boxShadow = `0 2px 8px 0 rgba(198, 181, 168, 0.5), 0 4px 10px 0 rgba(198, 181, 168, 0.5)`;
 });
 
 const orangebutton = document.getElementById("orange"); 
 orangebutton.addEventListener('click', function() {
-  gradientcolor.style.background = `linear-gradient(0deg, white, rgb(235, 130, 0, 0.1) 5%, rgb(235, 130, 0, 0.2) 25%, rgb(235, 130, 0, 0.4))`;
+  gradientcolor.style.background = `linear-gradient(0deg, white, rgb(210, 80, 0, 0.1) 5%, rgb(210, 80, 0,0.2) 25%, rgb(210, 80, 0, 0.4))`;
   leftcolor.style.background = `rgb(210, 80, 0, 0.97)`;
+  profil.style.boxShadow = `0 2px 8px 0 rgba(210, 80, 0, 0.2), 0 4px 10px 0 rgba(210, 80, 0, 0.2)`;
+  formation.style.boxShadow = `0 2px 8px 0 rgba(210, 80, 0, 0.2), 0 4px 10px 0 rgba(210, 80, 0, 0.2)`;
+  experience.style.boxShadow = `0 2px 8px 0 rgba(210, 80, 0, 0.2), 0 4px 10px 0 rgba(210, 80, 0, 0.2)`;
 });
 
 const purplebutton = document.getElementById("purple");
 purplebutton.addEventListener('click', function() {
   gradientcolor.style.background = `linear-gradient(0deg, white, rgba(138, 43, 226, 0.1) 5%, rgba(138, 43, 226, 0.2) 25%, rgba(138, 43, 226, 0.4))`;
   leftcolor.style.background = `rgba(108, 23, 166, 0.97)`;
+  profil.style.boxShadow = `0 2px 8px 0 rgba(108, 23, 166, 0.2), 0 4px 10px 0 rgba(108, 23, 166, 0.2)`;
+  formation.style.boxShadow = `0 2px 8px 0 rgba(108, 23, 166, 0.2), 0 4px 10px 0 rgba(108, 23, 166, 0.2)`;
+  experience.style.boxShadow = `0 2px 8px 0 rgba(108, 23, 166, 0.2), 0 4px 10px 0 rgba(108, 23, 166, 0.2)`;
 });
 
 //                                              //

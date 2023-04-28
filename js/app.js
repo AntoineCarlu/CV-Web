@@ -183,6 +183,10 @@ fr.addEventListener('click', function() {
   document.querySelector("#len").innerHTML = `Anglais`;
   document.querySelector("#enp").innerHTML = `Niveau avancé`;
   document.querySelector("#passions h2").innerHTML = `Passions`;
+  document.querySelector("#passion1").innerHTML = `Espace`;
+  document.querySelector("#passion2").innerHTML = `Voyage`;
+  document.querySelector("#passion3").innerHTML = `Lecture`;
+  document.querySelector("#passion4").innerHTML = `Écriture`;
   document.querySelector("#personnalLinks h2").innerHTML = `Liens Personnels`;
 });
 
@@ -191,7 +195,7 @@ en.addEventListener('click', function() {
   document.getElementById("headerP").innerHTML = `Web Developer`;
   document.getElementById("headerI").innerHTML = `B Permit`;
   document.querySelector("#profil h2").innerHTML = `My Profil`;
-  document.querySelector("#profil p").innerHTML = `blablablablablabla`;
+  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the age of college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional training, or personal discoveries.`;
   document.querySelector("#formation h2").innerHTML = `Education & Trainings`;
   document.querySelector("#formation p").innerHTML = `XXX`;
   document.querySelector("#experience h2").innerHTML = `Professional Experiences`;
@@ -206,6 +210,10 @@ en.addEventListener('click', function() {
   document.querySelector("#len").innerHTML = `English`;
   document.querySelector("#enp").innerHTML = `Advanced level`;
   document.querySelector("#passions h2").innerHTML = `Passions`;
+  document.querySelector("#passion1").innerHTML = `Space`;
+  document.querySelector("#passion2").innerHTML = `Travel`;
+  document.querySelector("#passion3").innerHTML = `Reading`;
+  document.querySelector("#passion4").innerHTML = `Writing`;
   document.querySelector("#personnalLinks h2").innerHTML = `Personnals Links`;
 });
 

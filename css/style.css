@@ -30,8 +30,8 @@ body {
 
 /*Settings panel*/
 .settings {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     width: 0;
     height: 200px;
     position: fixed;
@@ -46,20 +46,26 @@ body {
     animation: panelAnimation 0.8s forwards;
 }
     /*FR/EN buttons*/
+    .settings .languageButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     .settings .languageButton button {
-        margin: 5px 20% 5px 20%;
+        margin: 5px;
         padding: 1px;
-        width: 60%;
+        width: 40%;
         height: 20px;
         cursor: pointer;
     }
         .settings .languageButton button:nth-child(1) {
-            background-image: url(/imgs/fr-flag.png);
+            background-image: url(/CV-Version-Web/imgs/fr-flag.png);
             background-position: center;
             background-size: cover;
         }
         .settings .languageButton button:nth-child(2) {
-            background-image: url(/imgs/en-flag.png);
+            background-image: url(/CV-Version-Web/imgs/en-flag.png);
             background-position: center;
             background-size: cover;
         }
@@ -146,6 +152,23 @@ body {
         color: white;
         font-size: 110%;
     }
+    .leftcontent i {
+        font-size: 125%;
+    }
+    .leftcontent #passionsDiv {
+        display: flex;
+        flex-direction: column;
+    }
+        .leftcontent #passionsDiv div {
+            margin: 10px 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #passionsDiv p {
+            padding: 0;
+            padding-left: 10px;
+        }
     /*Lists on leftside*/
     .leftcontent ul {
         padding: 0 10px 20px 30px;
@@ -155,6 +178,7 @@ body {
             color: white;
             line-height: 1.2;
         }
+    /*Links*/
     .leftcontent a {
         text-decoration: none;
     }

@@ -98,6 +98,8 @@ const gradientcolor = document.querySelector("#headerTop");
 const profil = document.querySelector("#profil");
 const formation = document.querySelector("#formation");
 const experience = document.querySelector("#experience");
+const line1 = document.querySelector("#line1");
+const line2 = document.querySelector("#line2");
 
 const graybutton = document.getElementById("gray");
 graybutton.addEventListener('click', function() {
@@ -106,6 +108,8 @@ graybutton.addEventListener('click', function() {
   profil.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
   formation.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
   experience.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
+  line1.style.background = `rgba(17, 17, 17)`;
+  line2.style.background = `rgba(17, 17, 17)`;
 });
 
 const redbutton = document.getElementById("red");
@@ -115,6 +119,8 @@ redbutton.addEventListener('click', function() {
   profil.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
   formation.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
   experience.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
+  line1.style.background = `rgba(255, 0, 0, 0.4)`;
+  line2.style.background = `rgba(255, 0, 0, 0.4)`;
 });
 
 const bluebutton = document.getElementById("blue");
@@ -124,6 +130,8 @@ bluebutton.addEventListener('click', function() {
   profil.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
   formation.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
   experience.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
+  line1.style.background = `rgba(0, 0, 255, 0.4)`;
+  line2.style.background = `rgba(0, 0, 255, 0.4)`;
 });
 
 const beigebutton = document.getElementById("beige");
@@ -161,32 +169,53 @@ purplebutton.addEventListener('click', function() {
 ////////////////////////////////////////////
 //  Buttons to change language of the CV  //
 
-
-
 const fr = document.getElementById("fr");
 fr.addEventListener('click', function() {
   document.getElementById("headerP").innerHTML = `Développeur Web`;
   document.getElementById("headerI").innerHTML = `Permis B`;
+
   document.querySelector("#profil h2").innerHTML = `Mon Profil`;
   document.querySelector("#profil p").innerHTML = `Passionné par la réalisation de projets web, j'ai choisi la voie du développement web et de la programmation depuis l'âge du collège. Ma curiosité et mon désir d'en apprendre toujours plus, m'a fait découvrir de nombreux langages de programmation en formations professionnelles, ou découvertes personnelles.`;
+  
   document.querySelector("#formation h2").innerHTML = `Éducation & Formations`;
-  document.querySelector("#formation p").innerHTML = `XXX`;
+  document.querySelector("#f1h3").innerHTML = `Collège Le Trion`;
+  document.querySelector("#f1p1").innerHTML = `<em>62830 Samer </em>|<em> 2015 - 2019</em>`;
+  document.querySelector("#f1p2").innerHTML = `Diplôme : Brevet des Collèges`;
+  document.querySelector("#f2h3").innerHTML = `Lycée Edouard Branly`;
+  document.querySelector("#f2p1").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> 2019 - 2021</em>`;
+  document.querySelector("#f2p2").innerHTML = `Voie Générale`;
+  document.querySelector("#f2h3").innerHTML = `Lycée Edouard Branly`;
+  document.querySelector("#f2p1").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> 2019 - 2021</em>`;
+  document.querySelector("#f2p2").innerHTML = `Voie Générale`;
+  document.querySelector("#f3h3").innerHTML = `SAS Arduino`;
+  document.querySelector("#f3p1").innerHTML = `<strong>Chez Criac</strong>`;
+  document.querySelector("#f3p2").innerHTML = `<em>62230 Outreau </em>|<em> Octobre 2022 (2 semaines)</em>`;
+  document.querySelector("#f3p3").innerHTML = `Formation non diplômante en <br>Développement Front-End et Arduino`;
+  document.querySelector("#f4h3").innerHTML = `Développeur Intégrateur Web`;
+  document.querySelector("#f4p1").innerHTML = `<strong>Chez Simplon.co</strong>`;
+  document.querySelector("#f4p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> Mars 2023 (6 semaines)</em>`;
+  document.querySelector("#f4p3").innerHTML = `Formation non diplômante en <br>Développement d'Intégration Web`;
+
   document.querySelector("#experience h2").innerHTML = `Expériences Professionnelles`;
-  document.querySelector("#experience p").innerHTML = `XXX`;
+  document.querySelector("#experience p").innerHTML = `Aucune.. Pour le moment`;
+
   document.querySelector("#hardskills h2").innerHTML = `Compétences Techniques`;
   document.querySelector("#hardskills ul").innerHTML = `<li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Compétences Transversales`;
   document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'Adaptation et Autonomie</li><li>Créativité et Minutie</li><li>Esprit Logique et Analytique</li><li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
+  
   document.querySelector("#languages h2").innerHTML = `Langues`;
   document.querySelector("#lfr").innerHTML = `Français`;
   document.querySelector("#frp").innerHTML = `Langue natif`;
   document.querySelector("#len").innerHTML = `Anglais`;
   document.querySelector("#enp").innerHTML = `Niveau avancé`;
+
   document.querySelector("#passions h2").innerHTML = `Passions`;
   document.querySelector("#passion1").innerHTML = `Espace`;
   document.querySelector("#passion2").innerHTML = `Voyage`;
   document.querySelector("#passion3").innerHTML = `Lecture`;
   document.querySelector("#passion4").innerHTML = `Écriture`;
+
   document.querySelector("#personnalLinks h2").innerHTML = `Liens Personnels`;
 });
 
@@ -194,26 +223,46 @@ const en = document.getElementById("en");
 en.addEventListener('click', function() {
   document.getElementById("headerP").innerHTML = `Web Developer`;
   document.getElementById("headerI").innerHTML = `B Permit`;
+  
   document.querySelector("#profil h2").innerHTML = `My Profil`;
   document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the age of college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional training, or personal discoveries.`;
+  
   document.querySelector("#formation h2").innerHTML = `Education & Trainings`;
-  document.querySelector("#formation p").innerHTML = `XXX`;
+  document.querySelector("#f1h3").innerHTML = `College Le Trion`;
+  document.querySelector("#f1p1").innerHTML = `<em>62830 Samer </em>|<em> 2015 - 2019</em>`;
+  document.querySelector("#f1p2").innerHTML = `Graduation : DNB (Equivalent of the GCSE)`;
+  document.querySelector("#f2h3").innerHTML = `High School Edouard Branly`;
+  document.querySelector("#f2p1").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> 2019 - 2021</em>`;
+  document.querySelector("#f2p2").innerHTML = `General Education`;
+  document.querySelector("#f3h3").innerHTML = `SAS Arduino`;
+  document.querySelector("#f3p1").innerHTML = `<strong>At Criac</strong>`;
+  document.querySelector("#f3p2").innerHTML = `<em>62230 Outreau </em>|<em> October 2022 (2 weeks)</em>`;
+  document.querySelector("#f3p3").innerHTML = `Non-degree training in <br>Front-End and Arduino Development`;
+  document.querySelector("#f4h3").innerHTML = `Web Integrator Developer`;
+  document.querySelector("#f4p1").innerHTML = `<strong>At Simplon.co</strong>`;
+  document.querySelector("#f4p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> March 2023 (6 weeks)</em>`;
+  document.querySelector("#f4p3").innerHTML = `Non-degree training in <br>Web Integration development`;
+
   document.querySelector("#experience h2").innerHTML = `Professional Experiences`;
-  document.querySelector("#experience p").innerHTML = `XXX`;
+  document.querySelector("#experience p").innerHTML = `Nothing.. For the moment`;
+
   document.querySelector("#hardskills h2").innerHTML = `Hard Skills`;
   document.querySelector("#hardskills ul").innerHTML = `<li>Web development Languages<br>(HTML5/CSS3/JS)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Soft Skills`;
   document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and Autonomy</li><li>Creativity and Thoroughness</li><li>Logical and Analytical Thinking</li><li>Web researches and <br>Knowledge updating</li><li>Open-minded and Listening to others</li>`;
+  
   document.querySelector("#languages h2").innerHTML = `Languages`;
   document.querySelector("#lfr").innerHTML = `French`;
   document.querySelector("#frp").innerHTML = `Native language`;
   document.querySelector("#len").innerHTML = `English`;
   document.querySelector("#enp").innerHTML = `Advanced level`;
+
   document.querySelector("#passions h2").innerHTML = `Passions`;
   document.querySelector("#passion1").innerHTML = `Space`;
   document.querySelector("#passion2").innerHTML = `Travel`;
   document.querySelector("#passion3").innerHTML = `Reading`;
   document.querySelector("#passion4").innerHTML = `Writing`;
+
   document.querySelector("#personnalLinks h2").innerHTML = `Personnals Links`;
 });
 

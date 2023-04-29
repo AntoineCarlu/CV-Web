@@ -34,6 +34,8 @@ phone.addEventListener('click', function() {
 
 const leftside = document.getElementById("leftDesign");
 const button = document.querySelector(".button");
+const formationPosition = document.querySelectorAll(".fBlock");
+const formationLine = document.querySelectorAll(".line");
 //Event when click on the top-left button to display the leftside bar
 button.addEventListener('click', function() {
 
@@ -42,11 +44,23 @@ button.addEventListener('click', function() {
     button.setAttribute('class', 'button fa-solid fa-xmark');
     button.classList.remove('button');
     button.classList.add('buttonx');
+    formationPosition.forEach(element => {
+      element.style.position = "static";
+    });
+    formationLine.forEach(element => {
+      element.style.display = "none";
+    });
   } else {
         leftside.style.display = "none";
         button.setAttribute('class', 'buttonx fa-sharp fa-solid fa-bars');
         button.classList.remove('buttonx');
         button.classList.add('button');
+        formationPosition.forEach(element => {
+          element.style.position = "relative";
+        });
+        formationLine.forEach(element => {
+          element.style.display = "block";
+        });
     }
 });
 
@@ -98,8 +112,6 @@ const gradientcolor = document.querySelector("#headerTop");
 const profil = document.querySelector("#profil");
 const formation = document.querySelector("#formation");
 const experience = document.querySelector("#experience");
-const line1 = document.querySelector("#line1");
-const line2 = document.querySelector("#line2");
 
 const graybutton = document.getElementById("gray");
 graybutton.addEventListener('click', function() {
@@ -108,8 +120,6 @@ graybutton.addEventListener('click', function() {
   profil.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
   formation.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
   experience.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2)`;
-  line1.style.background = `rgba(17, 17, 17)`;
-  line2.style.background = `rgba(17, 17, 17)`;
 });
 
 const redbutton = document.getElementById("red");
@@ -119,8 +129,6 @@ redbutton.addEventListener('click', function() {
   profil.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
   formation.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
   experience.style.boxShadow = `0 2px 8px 0 rgba(200, 0, 0, 0.2), 0 4px 10px 0 rgba(200, 0, 0, 0.2)`;
-  line1.style.background = `rgba(255, 0, 0, 0.4)`;
-  line2.style.background = `rgba(255, 0, 0, 0.4)`;
 });
 
 const bluebutton = document.getElementById("blue");
@@ -130,8 +138,6 @@ bluebutton.addEventListener('click', function() {
   profil.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
   formation.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
   experience.style.boxShadow = `0 2px 8px 0 rgba(0, 0, 200, 0.2), 0 4px 10px 0 rgba(0, 0, 200, 0.2)`;
-  line1.style.background = `rgba(0, 0, 255, 0.4)`;
-  line2.style.background = `rgba(0, 0, 255, 0.4)`;
 });
 
 const beigebutton = document.getElementById("beige");

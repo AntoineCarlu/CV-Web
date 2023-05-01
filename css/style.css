@@ -59,12 +59,12 @@ body {
             cursor: pointer;
         }
             .settings .languageButton button:nth-child(1) {
-                background-image: url(/CV-Version-Web/imgs/fr-flag.png);
+                background-image: url(/imgs/fr-flag.png);
                 background-position: center;
                 background-size: cover;
             }
             .settings .languageButton button:nth-child(2) {
-                background-image: url(/CV-Version-Web/imgs/en-flag.png);
+                background-image: url(/imgs/en-flag.png);
                 background-position: center;
                 background-size: cover;
             }

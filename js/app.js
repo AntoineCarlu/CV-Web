@@ -205,9 +205,9 @@ fr.addEventListener('click', function() {
   document.querySelector("#experience h2").innerHTML = `Expériences Professionnelles`;
   document.querySelector("#experience p").innerHTML = `Aucune.. Pour le moment`;
 
-  document.querySelector("#hardskills h2").innerHTML = `Compétences Techniques`;
+  document.querySelector("#hardskills h2").innerHTML = `Compétences <br>Techniques`;
   document.querySelector("#hardskills ul").innerHTML = `<li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
-  document.querySelector("#softskills h2").innerHTML = `Compétences Transversales`;
+  document.querySelector("#softskills h2").innerHTML = `Compétences <br>Transversales`;
   document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'Adaptation et Autonomie</li><li>Créativité et Minutie</li><li>Esprit Logique et Analytique</li><li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
   
   document.querySelector("#languages h2").innerHTML = `Langues`;

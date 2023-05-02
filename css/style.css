@@ -105,7 +105,7 @@ body {
             }
 
 
-/*Deisgn of leftside*/
+/**Deisgn of leftside**/
 #leftDesign {
     position: absolute;
     background-color: rgba(40, 40, 40, 0.97);
@@ -116,8 +116,8 @@ body {
     }
 }
     /*Image of myself on leftside*/
-    #leftDesign img {
-        margin: 50px 5% 10px 5%;
+    #leftDesign #leftImg img {
+        margin: 0 5% 10px 5%;
         padding-top: 10px;
         max-width: 90%;
         display: none;
@@ -126,7 +126,7 @@ body {
 
 /***CONTENT ON LEFT SIDE***/
 .leftcontent {
-    margin-top: 0;
+    margin-top: 50px;
 }
     .leftcontent h2 {
         margin: 5px;
@@ -164,7 +164,7 @@ body {
         justify-content: center;
     }
         .leftcontent #passionsDiv div {
-            margin: 10px 15px;
+            margin: 5px 10px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -175,7 +175,7 @@ body {
         }
     /*Lists on leftside*/
     .leftcontent ul {
-        padding: 0 10px 20px 30px;
+        padding: 0 10px 10px 30px;
     }
         .leftcontent ul li {
             padding-bottom: 7px;
@@ -234,6 +234,11 @@ header #headerTop {
         font-size: 170%;
         cursor: pointer;
         transition: all 1s ease-in-out;
+    }
+
+    header #headerImg img {
+        margin: 0 20% 0 20%;
+        width: 60%;
     }
 
     /*Div with names*/
@@ -347,7 +352,7 @@ header #headerTop {
     }
     100% {
         width: 70%;
-        height: 1200px;
+        height: 1500px;
         font-size: normal;
     }
 }
@@ -395,7 +400,7 @@ header #headerTop {
 @media all and (min-width: 600px) {
     body {
         display: flex;
-        font-size: 110%;
+        font-size: 100%;
     }
 
     /*LEFT SIDE*/
@@ -406,11 +411,8 @@ header #headerTop {
             display: block;
             position: static;
         }
-            #leftDesign img {
-                margin: 0 5% 10px 5%;
-                padding-top: 10px;
-                max-width: 90%;
-                display: none;
+            #leftDesign #leftImg img {
+                display: block;
             }
             .leftcontent {
                 margin: 0;
@@ -420,6 +422,7 @@ header #headerTop {
     /*RIGHT SIDE*/
     #sectionRight {
         width: 70%;
+        font-size: 110%;
     }
         header {
             height: 200px;
@@ -427,7 +430,7 @@ header #headerTop {
             align-items: flex-start;
             justify-content: space-around;
         }
-            header img {
+            header #headerImg img {
                 display: none;
             }
             header #firstDivHeader {
@@ -443,19 +446,11 @@ header #headerTop {
 /*Details change*/
 @media all and (min-width: 700px) {
     #sectionLeft {
-        width: 30%;
+        width: 27%;
     }
     #sectionRight {
-        width: 70%;
+        width: 73%;
     }
-    .leftcontent #languages #Lbox {
-        display: flex;
-        flex-direction: row;
-    }
-        .leftcontent #languages strong,#frp,#enp {
-            padding-left: 25px;
-            padding-right: 10px;
-        }
 }
 
 /**PC/HIGH FORMAT**/

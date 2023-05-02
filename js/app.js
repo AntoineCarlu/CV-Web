@@ -66,7 +66,7 @@ button.addEventListener('click', function() {
 
 
 
-// DISPLAY:NONE THE #LEFTDESIGN IF WIDTH FORMAT UNDER 500PX //
+// DISPLAY:NONE THE #LEFTDESIGN IF WIDTH FORMAT UNDER 600PX //
 function MediaQuerry(mq) {
   if (mq.matches) {
     leftside.style.display = 'none';
@@ -274,3 +274,42 @@ en.addEventListener('click', function() {
 
 //                                        //
 ////////////////////////////////////////////
+
+
+
+const HardSkills = document.getElementById("hsButton");
+const SoftSkills = document.getElementById("ssButton");
+const HardList = document.querySelector("#hardskills");
+const SoftList = document.querySelector("#softskills");
+
+HardSkills.addEventListener('click', function() {
+  if (HardList.style.display === "none") {
+    SoftList.style.display = "none";
+    HardList.style.display = "block";
+    HardSkills.style.background = `rgb(170, 170, 170)`;
+    SoftSkills.style.background = `rgb(255, 255, 255)`;
+    HardSkills.style.cursor = "";
+    SoftSkills.style.cursor = "pointer";
+  }
+});
+
+SoftSkills.addEventListener('click', function() {
+  if (SoftList.style.display === "none") {
+    HardList.style.display = "none";
+    SoftList.style.display = "block";
+    SoftSkills.style.background = `rgb(170, 170, 170)`;
+    HardSkills.style.background = `rgb(255, 255, 255)`;
+    SoftSkills.style.cursor = "";
+    HardSkills.style.cursor = "pointer";
+  }
+});
+
+// DISPLAY:NONE THE #SOFTSKILLS IF WIDTH FORMAT ABOVE 600PX //
+function MediaQuerry(mq) {
+  const SoftList = document.querySelector("#softskills"); 
+  if (mq.matches) {
+    SoftList.style.display = 'block';
+  } else {
+    SoftList.style.display = 'none';
+  }
+}

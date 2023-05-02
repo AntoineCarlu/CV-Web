@@ -125,6 +125,9 @@ body {
 
 
 /***CONTENT ON LEFT SIDE***/
+#leftDesign {
+    height: 100%;
+}
 .leftcontent {
     margin-top: 50px;
 }
@@ -157,6 +160,33 @@ body {
     .leftcontent i {
         font-size: 115%;
     }
+    /**/
+    .leftcontent #skills {
+        display: none;
+    }
+        #skills #hsButton {
+            width: 80px;
+            height: 25px;
+            background-color: rgb(170, 170, 170);
+            color: rgb(0, 0, 0);
+            border: 0;
+            border-right: 0.5px solid rgba(40, 40, 40, 0.97);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            cursor: pointer;
+        }
+        #skills #ssButton {
+            width: 80px;
+            height: 25px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 0;
+            border-left: 0.5px solid rgba(40, 40, 40, 0.97);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+        }
+    /*Passions*/
     .leftcontent #passionsDiv {
         display: flex;
         flex-direction: row;
@@ -335,7 +365,7 @@ header #headerTop {
 }
 
             /****************/
-            /***ANIMATIONS***/
+            /*  ANIMATIONS  */
             /****************/
 
 /*Apparition of leftside bar*/
@@ -393,7 +423,7 @@ header #headerTop {
 
 
             /****************/
-            /***RESPONSIVE***/
+            /*  RESPONSIVE  */
             /****************/
 
 /**TABLET/IPAD**/
@@ -418,6 +448,13 @@ header #headerTop {
             #leftDesign #leftImg img {
                 display: block;
             }
+            .leftcontent #skills {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
 
     /*RIGHT SIDE*/
     #sectionRight {

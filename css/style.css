@@ -117,13 +117,16 @@ body {
 }
     /*Image of myself on leftside*/
     #leftDesign img {
+        margin: 50px 5% 10px 5%;
+        padding-top: 10px;
+        max-width: 90%;
         display: none;
-    }
+    } 
 
 
 /***CONTENT ON LEFT SIDE***/
 .leftcontent {
-    margin-top: 50px;
+    margin-top: 0;
 }
     .leftcontent h2 {
         margin: 5px;
@@ -152,7 +155,7 @@ body {
         font-size: 110%;
     }
     .leftcontent i {
-        font-size: 125%;
+        font-size: 115%;
     }
     .leftcontent #passionsDiv {
         display: flex;
@@ -184,8 +187,8 @@ body {
         text-decoration: none;
     }
     .leftcontent #links {
-        margin-top: 25px;
-        padding-bottom: 25px;
+        margin-top: 20px;
+        padding-bottom: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -235,12 +238,12 @@ header #headerTop {
 
     /*Div with names*/
     header #firstDivHeader {
+        margin-left: 20px;
+        padding: 25px 0 20px 0;
         display: flex;
         flex-direction: row;
     }
         header #firstDivHeader div {
-            margin-left: 20px;
-            padding: 25px 0 20px 0;
             font-size: 160%;
             line-height: 1.2;
         }
@@ -344,7 +347,7 @@ header #headerTop {
     }
     100% {
         width: 70%;
-        height: 1500px;
+        height: 1200px;
         font-size: normal;
     }
 }
@@ -397,7 +400,7 @@ header #headerTop {
 
     /*LEFT SIDE*/
     #sectionLeft {
-        width: 35%;
+        width: 30%;
     }
         #leftDesign {
             display: block;
@@ -407,7 +410,7 @@ header #headerTop {
                 margin: 0 5% 10px 5%;
                 padding-top: 10px;
                 max-width: 90%;
-                display: block;
+                display: none;
             }
             .leftcontent {
                 margin: 0;
@@ -416,13 +419,23 @@ header #headerTop {
 
     /*RIGHT SIDE*/
     #sectionRight {
-        width: 65%;
+        width: 70%;
     }
         header {
+            height: 200px;
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-around;
         }
+            header img {
+                display: none;
+            }
+            header #firstDivHeader {
+                padding-top: 40px;
+            }
+            header #secondDivHeader {
+                padding-top: 30px;
+            }
         header .button, .buttonx {
             display: none;
         }
@@ -430,11 +443,19 @@ header #headerTop {
 /*Details change*/
 @media all and (min-width: 700px) {
     #sectionLeft {
-        width: 25%;
+        width: 30%;
     }
     #sectionRight {
-        width: 75%;
+        width: 70%;
     }
+    .leftcontent #languages #Lbox {
+        display: flex;
+        flex-direction: row;
+    }
+        .leftcontent #languages strong,#frp,#enp {
+            padding-left: 25px;
+            padding-right: 10px;
+        }
 }
 
 /**PC/HIGH FORMAT**/

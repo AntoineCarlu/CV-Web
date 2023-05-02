@@ -32,7 +32,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     width: 0;
-    height: 200px;
+    height: 150px;
     position: fixed;
     right: 0;
     
@@ -230,7 +230,7 @@ header #headerTop {
     header .buttonx {
         position: absolute;
         top: 15px;
-        left: 60%;
+        left: 55%;
         font-size: 170%;
         cursor: pointer;
         transition: all 1s ease-in-out;
@@ -346,12 +346,12 @@ header #headerTop {
         font-size: 0;
     }
     50% {
-        width: 70%;
+        width: 65%;
         height: 50px;
         font-size: 0;
     }
     100% {
-        width: 70%;
+        width: 65%;
         height: 1500px;
         font-size: normal;
     }
@@ -378,7 +378,7 @@ header #headerTop {
         width: 0;
     }
     100% {
-        width: 150px;
+        width: 125px;
     }
 }
     /*The button too*/
@@ -387,7 +387,7 @@ header #headerTop {
             right: 0;
         }
         100% {
-            right: 150px;
+            right: 125px;
         }
     }
 
@@ -411,12 +411,12 @@ header #headerTop {
             display: block;
             position: static;
         }
+        .leftcontent {
+            margin: 0;
+            text-align: start;
+        }
             #leftDesign #leftImg img {
                 display: block;
-            }
-            .leftcontent {
-                margin: 0;
-                text-align: start;
             }
 
     /*RIGHT SIDE*/
@@ -460,7 +460,7 @@ header #headerTop {
         margin: auto;
     }
     .settingsButton {
-        top: 10%;
+        top: 150px;
         color: black;
         border: 2px solid rgb(0, 0, 0);
     }

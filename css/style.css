@@ -68,9 +68,10 @@ body {
                 background-position: center;
                 background-size: cover;
             }
+
     /*Positions of color buttons*/
     .settings .colorButton {
-        margin: 15px 0 15px 0;
+        margin: 10px 0 10px 0;
         display: grid;
         grid-template-columns: auto auto auto;
         justify-items: center;
@@ -131,6 +132,7 @@ body {
 .leftcontent {
     margin-top: 50px;
 }
+    /*Texts*/
     .leftcontent h2 {
         margin: 5px;
         margin-bottom: 10px;
@@ -160,9 +162,11 @@ body {
     .leftcontent i {
         font-size: 115%;
     }
-    /**/
+
+    /*Skills Button*/
     .leftcontent #skills {
         display: none;
+
     }
         #skills #hsButton {
             width: 80px;
@@ -173,7 +177,7 @@ body {
             border-right: 0.5px solid rgba(40, 40, 40, 0.97);
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
-            cursor: pointer;
+            cursor: default;
         }
         #skills #ssButton {
             width: 80px;
@@ -364,6 +368,7 @@ header #headerTop {
     background-color: rgba(17, 17, 17);
 }
 
+
             /****************/
             /*  ANIMATIONS  */
             /****************/
@@ -449,10 +454,11 @@ header #headerTop {
                 display: block;
             }
             .leftcontent #skills {
+                margin-top: 15px;
+                margin-bottom: 10px;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                margin-bottom: 10px;
             }
 
 
@@ -475,6 +481,9 @@ header #headerTop {
             }
             header #secondDivHeader {
                 padding-top: 30px;
+            }
+            header i {
+                margin-right: 10px;
             }
         header .button, .buttonx {
             display: none;

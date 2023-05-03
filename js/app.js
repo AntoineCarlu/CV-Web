@@ -206,7 +206,7 @@ fr.addEventListener('click', function() {
   document.querySelector("#experience p").innerHTML = `Aucune.. Pour le moment`;
 
   document.querySelector("#hardskills h2").innerHTML = `Compétences <br>Techniques`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Maîtrise de Langages <br>de Développement Web (HTML5/CSS3/JS)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de Langages <br>de Développement Web (HTML5/CSS3/JS)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Compétences <br>Transversales`;
   document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'Adaptation et Autonomie</li><li>Créativité et Minutie</li><li>Esprit Logique et Analytique</li><li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
   
@@ -277,6 +277,9 @@ en.addEventListener('click', function() {
 
 
 
+////////////////////////////////////
+//  Buttons to change skill list  //
+
 const HardSkills = document.getElementById("hsButton");
 const SoftSkills = document.getElementById("ssButton");
 const HardList = document.querySelector("#hardskills");
@@ -288,7 +291,7 @@ HardSkills.addEventListener('click', function() {
     HardList.style.display = "block";
     HardSkills.style.background = `rgb(170, 170, 170)`;
     SoftSkills.style.background = `rgb(255, 255, 255)`;
-    HardSkills.style.cursor = "";
+    HardSkills.style.cursor = "default";
     SoftSkills.style.cursor = "pointer";
   }
 });
@@ -299,17 +302,23 @@ SoftSkills.addEventListener('click', function() {
     SoftList.style.display = "block";
     SoftSkills.style.background = `rgb(170, 170, 170)`;
     HardSkills.style.background = `rgb(255, 255, 255)`;
-    SoftSkills.style.cursor = "";
+    SoftSkills.style.cursor = "default";
     HardSkills.style.cursor = "pointer";
   }
 });
 
 // DISPLAY:NONE THE #SOFTSKILLS IF WIDTH FORMAT ABOVE 600PX //
-function MediaQuerry(mq) {
+function MediaQuerry2(mq2) {
   const SoftList = document.querySelector("#softskills"); 
-  if (mq.matches) {
+  if (mq2.matches) {
     SoftList.style.display = 'block';
   } else {
     SoftList.style.display = 'none';
   }
 }
+const mq2 = window.matchMedia('(max-width: 600px)');
+MediaQuerry2(mq2); // check initial viewport width
+mq2.addListener(MediaQuerry2); // listen for changes in viewport width
+
+//                                //
+////////////////////////////////////

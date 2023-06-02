@@ -206,7 +206,7 @@ fr.addEventListener('click', function() {
   document.querySelector("#experience p").innerHTML = `Aucune.. Pour le moment`;
 
   document.querySelector("#hardskills h2").innerHTML = `Compétences <br>Techniques`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de Langages <br>de Développement Web (HTML5/CSS3/JS)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de Langages <br>de Développement Web (HTML5/CSS3/JS/PHP)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Compétences <br>Transversales`;
   document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'Adaptation et Autonomie</li><li>Créativité et Minutie</li><li>Esprit Logique et Analytique</li><li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
   
@@ -253,7 +253,7 @@ en.addEventListener('click', function() {
   document.querySelector("#experience p").innerHTML = `Nothing.. For the moment`;
 
   document.querySelector("#hardskills h2").innerHTML = `Hard Skills`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Web development Languages<br>(HTML5/CSS3/JS)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Web development Languages<br>(HTML5/CSS3/JS/PHP)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Soft Skills`;
   document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and Autonomy</li><li>Creativity and Thoroughness</li><li>Logical and Analytical Thinking</li><li>Web researches and <br>Knowledge updating</li><li>Open-minded and Listening to others</li>`;
   

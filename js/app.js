@@ -181,7 +181,7 @@ fr.addEventListener('click', function() {
   document.getElementById("headerI").innerHTML = `Permis B`;
 
   document.querySelector("#profil h2").innerHTML = `Mon Profil`;
-  document.querySelector("#profil p").innerHTML = `Passionné par la réalisation de projets web, j'ai choisi la voie du développement web et de la programmation depuis l'âge du collège. Ma curiosité et mon désir d'en apprendre toujours plus, m'a fait découvrir de nombreux langages de programmation en formations professionnelles, ou découvertes personnelles.`;
+  document.querySelector("#profil p").innerHTML = `Passionné par la réalisation de projets web, j'ai choisi la voie du développement web et de la programmation depuis le collège. Ma curiosité et mon désir d'en apprendre toujours plus, m'a fait découvrir de nombreux langages de programmation en formations professionnelles, ou découvertes personnelles.`;
   
   document.querySelector("#formation h2").innerHTML = `Éducation & Formations`;
   document.querySelector("#f1h3").innerHTML = `Collège Le Trion`;
@@ -206,13 +206,13 @@ fr.addEventListener('click', function() {
   document.querySelector("#experience p").innerHTML = `Aucune.. Pour le moment`;
 
   document.querySelector("#hardskills h2").innerHTML = `Compétences <br>Techniques`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de Langages <br>de Développement Web (HTML5/CSS3/JS/PHP)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de langages <br>de développement Web (HTML5/CSS3/JS/PHP)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Compétences <br>Transversales`;
-  document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'Adaptation et Autonomie</li><li>Créativité et Minutie</li><li>Esprit Logique et Analytique</li><li>Recherches Web et <br>Mise à Niveau de ses Connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
+  document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'adaptation et autonomie</li><li>Créativité et minutie</li><li>Esprit logique et analytique</li><li>Recherches Web et <br>mise à niveau de ses connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
   
   document.querySelector("#languages h2").innerHTML = `Langues`;
   document.querySelector("#lfr").innerHTML = `Français`;
-  document.querySelector("#frp").innerHTML = `Langue natif`;
+  document.querySelector("#frp").innerHTML = `Langue native`;
   document.querySelector("#len").innerHTML = `Anglais`;
   document.querySelector("#enp").innerHTML = `Niveau avancé`;
 
@@ -231,7 +231,7 @@ en.addEventListener('click', function() {
   document.getElementById("headerI").innerHTML = `B Permit`;
   
   document.querySelector("#profil h2").innerHTML = `My Profil`;
-  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the age of college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional training, or personal discoveries.`;
+  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional training, or personal discoveries.`;
   
   document.querySelector("#formation h2").innerHTML = `Education & Trainings`;
   document.querySelector("#f1h3").innerHTML = `College Le Trion`;
@@ -253,9 +253,9 @@ en.addEventListener('click', function() {
   document.querySelector("#experience p").innerHTML = `Nothing.. For the moment`;
 
   document.querySelector("#hardskills h2").innerHTML = `Hard Skills`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Web development Languages<br>(HTML5/CSS3/JS/PHP)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Web development languages<br>(HTML5/CSS3/JS/PHP)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Soft Skills`;
-  document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and Autonomy</li><li>Creativity and Thoroughness</li><li>Logical and Analytical Thinking</li><li>Web researches and <br>Knowledge updating</li><li>Open-minded and Listening to others</li>`;
+  document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and autonomy</li><li>Creativity and thoroughness</li><li>Logical and analytical thinking</li><li>Web researches and <br>knowledge updating</li><li>Open-minded and listening to others</li>`;
   
   document.querySelector("#languages h2").innerHTML = `Languages`;
   document.querySelector("#lfr").innerHTML = `French`;

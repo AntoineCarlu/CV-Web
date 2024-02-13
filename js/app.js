@@ -196,11 +196,15 @@ fr.addEventListener('click', function() {
   document.querySelector("#f3h3").innerHTML = `SAS Arduino`;
   document.querySelector("#f3p1").innerHTML = `<strong>Chez Criac</strong>`;
   document.querySelector("#f3p2").innerHTML = `<em>62230 Outreau </em>|<em> Octobre 2022 (2 semaines)</em>`;
-  document.querySelector("#f3p3").innerHTML = `Formation non diplômante en <br>Développement Front-End et Arduino`;
+  document.querySelector("#f3p3").innerHTML = `Formation non diplômante en <br>développement Front-End et Arduino`;
   document.querySelector("#f4h3").innerHTML = `Développeur Intégrateur Web`;
   document.querySelector("#f4p1").innerHTML = `<strong>Chez Simplon.co</strong>`;
   document.querySelector("#f4p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> Mars 2023 (6 semaines)</em>`;
-  document.querySelector("#f4p3").innerHTML = `Formation non diplômante en <br>Développement d'Intégration Web`;
+  document.querySelector("#f4p3").innerHTML = `Formation non diplômante en <br>développement d'Intégration Web`;
+  document.querySelector("#f5h3").innerHTML = `Développeur Fullstack`;
+  document.querySelector("#f5p1").innerHTML = `<strong>Chez Simplon.co</strong>`;
+  document.querySelector("#f5p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> Avril 2023 - Janvier 2024 (9 mois)</em>`;
+  document.querySelector("#f5p3").innerHTML = `Formation diplômante en <br>développement Web Fullstack`;
 
   document.querySelector("#experience h2").innerHTML = `Expériences Professionnelles`;
   document.querySelector("#e1h3").innerHTML = `Stage en Développement web`;
@@ -234,9 +238,9 @@ en.addEventListener('click', function() {
   document.getElementById("headerI").innerHTML = `B Permit`;
   
   document.querySelector("#profil h2").innerHTML = `My Profil`;
-  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional training, or personal discoveries.`;
+  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional formation, or personal discoveries.`;
   
-  document.querySelector("#formation h2").innerHTML = `Education & Trainings`;
+  document.querySelector("#formation h2").innerHTML = `Education & Formations`;
   document.querySelector("#f1h3").innerHTML = `College Le Trion`;
   document.querySelector("#f1p1").innerHTML = `<em>62830 Samer </em>|<em> 2015 - 2019</em>`;
   document.querySelector("#f1p2").innerHTML = `Graduation : DNB (Equivalent of the GCSE)`;
@@ -246,11 +250,15 @@ en.addEventListener('click', function() {
   document.querySelector("#f3h3").innerHTML = `SAS Arduino`;
   document.querySelector("#f3p1").innerHTML = `<strong>At Criac</strong>`;
   document.querySelector("#f3p2").innerHTML = `<em>62230 Outreau </em>|<em> October 2022 (2 weeks)</em>`;
-  document.querySelector("#f3p3").innerHTML = `Non-degree training in <br>Front-End and Arduino Development`;
+  document.querySelector("#f3p3").innerHTML = `Non-degree formation in <br>Front-End and Arduino development`;
   document.querySelector("#f4h3").innerHTML = `Web Integrator Developer`;
   document.querySelector("#f4p1").innerHTML = `<strong>At Simplon.co</strong>`;
   document.querySelector("#f4p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> March 2023 (6 weeks)</em>`;
-  document.querySelector("#f4p3").innerHTML = `Non-degree training in <br>Web Integration development`;
+  document.querySelector("#f4p3").innerHTML = `Non-degree formation in <br>Web Integration development`;
+  document.querySelector("#f5h3").innerHTML = `Fullstack Developer`;
+  document.querySelector("#f5p1").innerHTML = `<strong>At Simplon.co</strong>`;
+  document.querySelector("#f5p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> April 2023 - January 2024 (9 months)</em>`;
+  document.querySelector("#f5p3").innerHTML = `Degree formation in <br>Fullstack Web development`;
 
   document.querySelector("#experience h2").innerHTML = `Professional Experiences`;
   document.querySelector("#e1h3").innerHTML = `Internship in Web Development`;

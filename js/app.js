@@ -196,17 +196,24 @@ fr.addEventListener('click', function() {
   document.querySelector("#f3h3").innerHTML = `SAS Arduino`;
   document.querySelector("#f3p1").innerHTML = `<strong>Chez Criac</strong>`;
   document.querySelector("#f3p2").innerHTML = `<em>62230 Outreau </em>|<em> Octobre 2022 (2 semaines)</em>`;
-  document.querySelector("#f3p3").innerHTML = `Formation non diplômante en <br>Développement Front-End et Arduino`;
+  document.querySelector("#f3p3").innerHTML = `Formation non diplômante en <br>développement Front-End et Arduino`;
   document.querySelector("#f4h3").innerHTML = `Développeur Intégrateur Web`;
   document.querySelector("#f4p1").innerHTML = `<strong>Chez Simplon.co</strong>`;
   document.querySelector("#f4p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> Mars 2023 (6 semaines)</em>`;
-  document.querySelector("#f4p3").innerHTML = `Formation non diplômante en <br>Développement d'Intégration Web`;
+  document.querySelector("#f4p3").innerHTML = `Formation non diplômante en <br>développement d'Intégration Web`;
+  document.querySelector("#f5h3").innerHTML = `Développeur Fullstack`;
+  document.querySelector("#f5p1").innerHTML = `<strong>Chez Simplon.co</strong>`;
+  document.querySelector("#f5p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> Avril 2023 - Janvier 2024 (9 mois)</em>`;
+  document.querySelector("#f5p3").innerHTML = `Formation diplômante en <br>développement Web Fullstack`;
 
   document.querySelector("#experience h2").innerHTML = `Expériences Professionnelles`;
-  document.querySelector("#experience p").innerHTML = `Aucune.. Pour le moment`;
+  document.querySelector("#e1h3").innerHTML = `Stage en Développement web`;
+  document.querySelector("#e1p1").innerHTML = `<strong>Chez Gavicy Conseil</strong>`;
+  document.querySelector("#e1p2").innerHTML = `<em>En distanciel </em>|<em> 01 Septembre 2023 - 27 Novembre 2023 (3 mois)</em>`;
+  document.querySelector("#e1p3").innerHTML = `Développement d'un Portail d'applications de l'entreprise Gavicy Conseil, statique, dynamique et adaptable, avec la conception d'une maquette, tout cela en répondant aux demandes du client <br>Framework utilisé : Angular 15`;
 
   document.querySelector("#hardskills h2").innerHTML = `Compétences <br>Techniques`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de langages <br>de développement Web (HTML5/CSS3/JS/PHP)</li><li>Développement Front-End de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de langages <br>de développement Web (HTML5 / CSS3 / JS / JSX)</li><li>Utilisation de frameworks <br>de développement Web (React / Next.js)</li><li>Développement et intégration de base de données (MongoDB / MySQL)</li><li>Développement Fullstack de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Compétences <br>Transversales`;
   document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'adaptation et autonomie</li><li>Créativité et minutie</li><li>Esprit logique et analytique</li><li>Recherches Web et <br>mise à niveau de ses connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
   
@@ -231,9 +238,9 @@ en.addEventListener('click', function() {
   document.getElementById("headerI").innerHTML = `B Permit`;
   
   document.querySelector("#profil h2").innerHTML = `My Profil`;
-  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional training, or personal discoveries.`;
+  document.querySelector("#profil p").innerHTML = `Passionate about web projects, I have chosen the path of web development and programming since the college. My curiosity and my desire to learn more and more, made me discover many programming languages in professional formation, or personal discoveries.`;
   
-  document.querySelector("#formation h2").innerHTML = `Education & Trainings`;
+  document.querySelector("#formation h2").innerHTML = `Education & Formations`;
   document.querySelector("#f1h3").innerHTML = `College Le Trion`;
   document.querySelector("#f1p1").innerHTML = `<em>62830 Samer </em>|<em> 2015 - 2019</em>`;
   document.querySelector("#f1p2").innerHTML = `Graduation : DNB (Equivalent of the GCSE)`;
@@ -243,17 +250,24 @@ en.addEventListener('click', function() {
   document.querySelector("#f3h3").innerHTML = `SAS Arduino`;
   document.querySelector("#f3p1").innerHTML = `<strong>At Criac</strong>`;
   document.querySelector("#f3p2").innerHTML = `<em>62230 Outreau </em>|<em> October 2022 (2 weeks)</em>`;
-  document.querySelector("#f3p3").innerHTML = `Non-degree training in <br>Front-End and Arduino Development`;
+  document.querySelector("#f3p3").innerHTML = `Non-degree formation in <br>Front-End and Arduino development`;
   document.querySelector("#f4h3").innerHTML = `Web Integrator Developer`;
   document.querySelector("#f4p1").innerHTML = `<strong>At Simplon.co</strong>`;
   document.querySelector("#f4p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> March 2023 (6 weeks)</em>`;
-  document.querySelector("#f4p3").innerHTML = `Non-degree training in <br>Web Integration development`;
+  document.querySelector("#f4p3").innerHTML = `Non-degree formation in <br>Web Integration development`;
+  document.querySelector("#f5h3").innerHTML = `Fullstack Developer`;
+  document.querySelector("#f5p1").innerHTML = `<strong>At Simplon.co</strong>`;
+  document.querySelector("#f5p2").innerHTML = `<em>62200 Boulogne-Sur-Mer </em>|<em> April 2023 - January 2024 (9 months)</em>`;
+  document.querySelector("#f5p3").innerHTML = `Degree formation in <br>Fullstack Web development`;
 
   document.querySelector("#experience h2").innerHTML = `Professional Experiences`;
-  document.querySelector("#experience p").innerHTML = `Nothing.. For the moment`;
+  document.querySelector("#e1h3").innerHTML = `Internship in Web Development`;
+  document.querySelector("#e1p1").innerHTML = `<strong>At Gavicy Conseil</strong>`;
+  document.querySelector("#e1p2").innerHTML = `<em>In remote </em>|<em> September 01, 2023 - November 27, 2023 (3 months)</em>`;
+  document.querySelector("#e1p3").innerHTML = `Development of a static, dynamic, and adaptable application portal for Gavicy Conseil, including the conception of a prototype design <br>Framework used : Angular 15`;
 
   document.querySelector("#hardskills h2").innerHTML = `Hard Skills`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Web development languages<br>(HTML5/CSS3/JS/PHP)</li><li>Front-End development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Web development languages<br>(HTML5 / CSS3 / JS / JSX)</li><li>Utilization of Web development Frameworks (React / Next.js)</li><li>Database development and integration (MongoDB / MySQL)</li><li>Fullstack development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Soft Skills`;
   document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and autonomy</li><li>Creativity and thoroughness</li><li>Logical and analytical thinking</li><li>Web researches and <br>knowledge updating</li><li>Open-minded and listening to others</li>`;
   

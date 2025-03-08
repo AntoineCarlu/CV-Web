@@ -213,7 +213,7 @@ fr.addEventListener('click', function() {
   document.querySelector("#e1p3").innerHTML = `Développement d'un Portail d'applications de l'entreprise Gavicy Conseil, statique, dynamique et adaptable, avec la conception d'une maquette, tout cela en répondant aux demandes du client <br>Framework utilisé : Angular 15`;
 
   document.querySelector("#hardskills h2").innerHTML = `Compétences <br>Techniques`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de langages <br>de développement Web (HTML5 / CSS3 / JS / JSX)</li><li>Utilisation de frameworks <br>de développement Web (React / Next.js)</li><li>Développement et intégration de base de données (MongoDB / MySQL)</li><li>Développement Fullstack de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Utilisation de langages <br>de développement Web (HTML5 / CSS3 / JS / JSX)</li><li>Utilisation de frameworks <br>de développement Web (React / Next.js / Angular)</li><li>Développement et intégration de base de données (MongoDB / MySQL)</li><li>Développement Fullstack de site web Statique ou Dynamique, et Adaptable</li><li>Intégration Web en Front-End</li><li>Maquettage (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Compétences <br>Transversales`;
   document.querySelector("#softskills ul").innerHTML = `<li>Capacité d'adaptation et autonomie</li><li>Créativité et minutie</li><li>Esprit logique et analytique</li><li>Recherches Web et <br>mise à niveau de ses connaissances</li><li>Ouvert d'esprit et à l'écoute</li>`;
   
@@ -267,7 +267,7 @@ en.addEventListener('click', function() {
   document.querySelector("#e1p3").innerHTML = `Development of a static, dynamic, and adaptable application portal for Gavicy Conseil, including the conception of a prototype design <br>Framework used : Angular 15`;
 
   document.querySelector("#hardskills h2").innerHTML = `Hard Skills`;
-  document.querySelector("#hardskills ul").innerHTML = `<li>Web development languages<br>(HTML5 / CSS3 / JS / JSX)</li><li>Utilization of Web development Frameworks (React / Next.js)</li><li>Database development and integration (MongoDB / MySQL)</li><li>Fullstack development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
+  document.querySelector("#hardskills ul").innerHTML = `<li>Web development languages<br>(HTML5 / CSS3 / JS / JSX)</li><li>Utilization of Web development Frameworks (React / Next.js / Angular)</li><li>Database development and integration (MongoDB / MySQL)</li><li>Fullstack development in Static or Dynamic, and Responsive Websites</li><li>Web Integration (Front-End)</li><li>Prototyping (Figma)</li>`;
   document.querySelector("#softskills h2").innerHTML = `Soft Skills`;
   document.querySelector("#softskills ul").innerHTML = `<li>Adaptability and autonomy</li><li>Creativity and thoroughness</li><li>Logical and analytical thinking</li><li>Web researches and <br>knowledge updating</li><li>Open-minded and listening to others</li>`;
   
